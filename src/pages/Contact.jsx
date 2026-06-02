@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
-const EMAILJS_SERVICE_ID = 'service_7co51fl'
-const EMAILJS_TEMPLATE_ID = 'template_jvf3oph'
-const EMAILJS_PUBLIC_KEY = '33CbntOBtn6sP17xT'
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 const Contact = () => {
   const formRef = useRef(null)
