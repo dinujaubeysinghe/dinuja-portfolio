@@ -244,7 +244,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.08 }}
           >
             <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
-                <a href="https://wageeshadiaz.com" target="_blank" rel="noopener noreferrer">
+                <a href="/projects/1" rel="noopener noreferrer">
                     <img src={project1} alt="Project 1" className="rounded-2xl h-full w-full object-cover" />
                 </a>
             </div>
@@ -261,7 +261,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.18 }}
           >
             <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
-                <a href="https://unisport.com" target="_blank" rel="noopener noreferrer">
+                <a href="/projects/2" rel="noopener noreferrer">
                     <img src={project2} alt="Project 2" className="rounded-2xl h-full w-full object-cover" />
                 </a>
             </div>
@@ -278,10 +278,10 @@ export default function Home() {
 
       </section>
       {/* ── Contact ── */}
-      <section className="relative z-10 py-8 px-6 max-w-5xl mx-auto" id="contact">
+      <section className="relative z-10 py-16 px-6 max-w-5xl mx-auto" id="contact">
         <div className="font-main text-white mb-4 flex flex-col items-center"> 
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/50 text-[11px] uppercase tracking-widest font-main mb-6">
-          <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#8b3dff' }} />
+          <span className="w-1.5 h-1.5 rounded-full bg-white" />
           Get in touch
         </div>
         <motion.div className="font-main text-white text-center mb-6"
@@ -295,7 +295,7 @@ export default function Home() {
             style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)', letterSpacing: '-0.02em' }}
           >
             Let's{' '}
-            <em className="not-italic text-white/50">chat</em>,
+            <em className="not-italic text-white/50">chat</em>
             <br />
             shall we?
           </h2>

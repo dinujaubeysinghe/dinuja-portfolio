@@ -14,9 +14,24 @@ body {
 }
 
 @theme {
-  --color-primary: #f0b90b;
-  --color-hover: #fcd535;
   --font-main: "Sora", sans-serif;
 }
 
 /* Custom styles can be added here */
+
+/* Animations were moved to the About page component to keep them local to that page. */
+/* About page animations (moved from About.jsx) */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeUp {
+  opacity: 0;
+  animation: fadeUp 700ms ease forwards;
+}
+
+@keyframes growLine { from { width: 0; } to { width: 3rem; } }
+.line-grow { display: inline-block; height: 2px; width: 0; border-radius: 999px; background: currentColor; animation: growLine 600ms ease forwards; }
+
+@keyframes subtlePop { from { transform: scale(0.98); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.animate-pop { opacity: 0; transform-origin: center; animation: subtlePop 500ms ease forwards; }
