@@ -29,7 +29,7 @@ const Education = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.12 }}
             >
-             Building a strong foundation in technology through rigorous study and hands-on project experience.
+             Building a strong foundation in technology through rigorous study and hands on project experience.
             </motion.p>
         </div>
 

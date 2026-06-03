@@ -135,13 +135,13 @@ export default function Home() {
           }}
         >
           <a
-            href="#projects"
+            href="/projects"
             className="font-main text-sm font-medium px-7 py-3 rounded-full border border-white/20 text-black bg-white hover:bg-black hover:text-white transition-all duration-300"
           >
            View Projects
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="font-main text-sm font-medium px-7 py-3 rounded-full text-white/80 border border-white/20 backdrop-blur transition-all duration-300 hover:border-white/40 hover:text-white hover:bg-white/5"
           >
              Get in Touch
@@ -164,7 +164,7 @@ export default function Home() {
         </div>
       </section>
       {/* ── About ── */}
-      <section className="relative z-10 py-24 px-6 max-w-5xl mx-auto" id="about">
+      <section className="relative z-10 py-12 px-6 max-w-5xl mx-auto" id="about">
         <motion.div className="grid md:grid-cols-2 gap-16 items-center"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -297,7 +297,7 @@ export default function Home() {
             Let's{' '}
             <em className="not-italic text-white/50">chat</em>
             <br />
-            shall we?
+            Don't Be Shy
           </h2>
         </motion.div>
         <div>

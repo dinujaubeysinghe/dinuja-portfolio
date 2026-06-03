@@ -33,7 +33,7 @@ const ProjectDetail = () => {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M19 12H5M5 12l7 7M5 12l7-7"/>
             </svg>
-            Back to Projects
+            Go Back
           </motion.button>
         </div>
 

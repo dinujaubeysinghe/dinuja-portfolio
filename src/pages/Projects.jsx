@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom'
 // ─── ADD YOUR PROJECT IMAGES HERE ────────────────────────────────────────────
 import project1 from '../assets/projects/wageesha_portfolio.png'
 import project2 from '../assets/projects/unisports.png'
-import project3 from '../assets/projects/Smart Campus/sdp1.png'
+import project3 from '../assets/projects/Smart Campus/sdpT.png'
 import project4 from '../assets/projects/sportify/spdp2.png'
+import project5 from '../assets/projects/Figma/fdpT.png'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
@@ -15,7 +16,7 @@ const projects = [
     number: '01',
     title: 'Wageesha Diaz Portfolio',
     description: 'A modern personal portfolio website designed and developed to showcase skills, projects, and experience as a frontend developer.',
-    tech: ['React', 'Tailwind CSS', 'Framer Motion'],
+    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
     image: project1,
     featured: true,
   },
@@ -33,7 +34,7 @@ const projects = [
     number: '03',
     title: 'Smart Campus Hub — Academic Project',
     description: 'Short description.',
-    tech: ['React', 'Firebase', 'Tailwind CSS'],
+    tech: ['React', 'Spring Boot', 'Tailwind CSS'],
     image: project3,
     featured: false,
   },
@@ -42,8 +43,17 @@ const projects = [
     number: '04',
     title: 'Sportify — Campus Project',
     description: 'Another short description.',
-    tech: ['React', 'Express', 'PostgreSQL'],
+    tech: ['React', 'Express', 'Node.js', 'MongoDB'],
     image: project4     ,
+    featured: false,
+  },
+  {
+    id: 5,
+    number: '05',
+    title: 'Graphify — Campus Project',
+    description: '',
+    tech: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Mobile App Design'], 
+    image: project5     ,
     featured: false,
   },
 ]
@@ -81,7 +91,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.12 }}
         >
-          A collection of projects I've worked on. From academic builds to personal experiments.
+          Coded at 2am, deployed at 6am, still working today. Those should make my AMMA proud.
         </motion.p>
       </div>
 
