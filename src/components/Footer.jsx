@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer className='py-8 border-t border-b border-white/20 transition-colors '>
-      <div className='flex justify-center gap-4 mx-24'>
+      <div className='flex justify-center gap-4 mx-24 mb-4'>
         <a href='https://www.linkedin.com/in/dinuja-ubeysinghe-620317311/' target='_blank' rel='noreferrer' aria-label='LinkedIn' className='text-white hover:text-slate-400'>
           <FaLinkedin size={20} />
         </a>

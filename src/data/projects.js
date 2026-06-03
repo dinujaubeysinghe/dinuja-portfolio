@@ -80,12 +80,12 @@ Outcome: Delivered a professional and visually appealing portfolio website that 
       { src: wageeshaPortfolio, caption: 'Professional hero and branding' },
       { src: wdp2, caption: 'About section' },
       { src: wdp3, caption: 'Event showcase section' },
-      { src: wdp4, caption: 'Voiceover services section' },
-      { src: wdp5, caption: 'Contact and inquiry flow' },
-      { src: wdp6, caption: 'Responsive layout on desktop' },
-      { src: wdp7, caption: 'Responsive layout on tablet' },
-      { src: wdp8, caption: 'Responsive layout on mobile' },
-      { src: wdp9, caption: 'Additional view' },
+      { src: wdp4, caption: 'Contact section' },
+      { src: wdp5, caption: 'About Page' },
+      { src: wdp6, caption: 'Event showcase' },
+      { src: wdp7, caption: 'Voiceover services' },
+      { src: wdp8, caption: 'Contact Page' },
+      { src: wdp9, caption: 'Contact form' },
     ],
   },
   {
@@ -114,17 +114,17 @@ Outcome: Delivered a secure, scalable, and maintainable sports management platfo
       'Role-based dashboards with server-side validation and optimized data fetching',
     ],
     screenshots: [
-      { src: unisports, caption: 'Sports management overview' },
-      { src: udp1, caption: 'User management dashboard' },
-      { src: udp2, caption: 'Role-based access flow' },
-      { src: udp3, caption: 'Payment checkout interface' },
-      { src: udp4, caption: 'Transaction status tracking' },
-      { src: udp5, caption: 'Coach and student dashboard' },
-      { src: udp6, caption: 'Payment history and records' },
-      { src: udp7, caption: 'Admin management view' },
-      { src: udp8, caption: 'Responsive payment interface' },
-      { src: udp9, caption: 'User profile and account settings' },
-      { src: udp10, caption: 'Final platform showcase' },
+      { src: unisports, caption: 'Sports management hero section' },
+      { src: udp1, caption: 'Feature highlights' },
+      { src: udp2, caption: 'How it works section' },
+      { src: udp3, caption: 'Popular sports section' },
+      { src: udp4, caption: 'Admin dashboard' },
+      { src: udp5, caption: 'User details and profile' },
+      { src: udp6, caption: 'Admin payment page' },
+      { src: udp7, caption: 'Admin transaction history' },
+      { src: udp8, caption: 'Admin reporting and analytics' },
+      { src: udp9, caption: 'Student dashboard' },
+      { src: udp10, caption: 'Checkout process' },
     ],
   },
   {
@@ -151,7 +151,7 @@ This module helped streamline campus maintenance operations by improving issue r
       'Ticket search, filtering, and progress tracking for better visibility',
     ],
     screenshots: [
-      { src: sdp1, caption: 'Maintenance and incident dashboard' },
+      { src: sdp1, caption: 'AdminMaintenance and incident dashboard' },
       { src: sdp2, caption: 'Ticket submission workflow' },
       { src: sdp3, caption: 'Ticket details and status tracking' },
       { src: sdp4, caption: 'Technician assignment and resolution flow' },
@@ -185,11 +185,11 @@ Outcome: Delivered a secure and scalable e-commerce solution that streamlined sp
       'Order Confirmation and Purchase Summary',
     ],
     screenshots: [
-      { src: spdp2, caption: 'Project overview' },
-      { src: spdp1, caption: 'Project overview' },
-      { src: spdp3, caption: 'Project overview' },
-      { src: spdp4, caption: 'Project overview' },
-      { src: spdp5, caption: 'Project overview' },
+      { src: spdp2, caption: 'Shopping cart page' },
+      { src: spdp1, caption: 'Home page' },
+      { src: spdp3, caption: 'Checkout shipping' },
+      { src: spdp4, caption: 'Checkout payment' },
+      { src: spdp5, caption: 'Checkout confirmation' },
     ],
   },
   {
@@ -218,19 +218,30 @@ Outcome: Delivered a comprehensive and visually polished UI/UX design that clear
       'Cart and Checkout Flow — Smooth and intuitive purchase experience',
     ],
     screenshots: [
-      { src: fdp1, caption: 'Authentication flow and home screen' },
-      { src: fdp2, caption: 'Product listing and detail screens' },
-      { src: fdp3, caption: 'Custom design upload interface' }, 
-      { src: fdp4, caption: 'Shopping cart and checkout flow' },
-      { src: fdp5, caption: 'Seller dashboard overview' },
-      { src: fdp6, caption: 'Product management for sellers' },
-      { src: fdp7, caption: 'Order management for sellers' },
-      { src: fdp8, caption: 'Mobile layout and responsiveness' },
-      { src: fdp9, caption: 'Additional view' },
-      { src: fdp10, caption: 'Additional view' },
-      { src: fdp11, caption: 'Additional view' },
-      { src: fdp12, caption: 'Final prototype showcase' },
-    ],
+  { src: fdp1, caption: 'Splash screen and application launch' },
+
+  { src: fdp2, caption: 'Welcome screen introducing the fashion marketplace' },
+
+  { src: fdp3, caption: 'User login interface with secure authentication' },
+
+  { src: fdp4, caption: 'User registration and account creation screen' },
+
+  { src: fdp5, caption: 'Home dashboard featuring trending products and categories' },
+
+  { src: fdp6, caption: 'User profile and account information management' },
+
+  { src: fdp7, caption: 'Product catalog with fashion item browsing' },
+
+  { src: fdp8, caption: 'Detailed product view with item information and purchase options' },
+
+  { src: fdp9, caption: 'Custom apparel designer with color and style customization' },
+
+  { src: fdp10, caption: 'Shopping cart with selected items and order summary' },
+
+  { src: fdp11, caption: 'Checkout form for shipping and payment details' },
+
+  { src: fdp12, caption: 'User account access and personalized experience entry point' },
+]
   },
 ]
 
