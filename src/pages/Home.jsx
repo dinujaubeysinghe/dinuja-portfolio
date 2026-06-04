@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import project1 from '../assets/projects/wageesha_portfolio.png'
-import project2 from '../assets/projects/unisports.png'
+import project1 from '../assets/projects/wageesha_portfolio.webp'
+import project2 from '../assets/projects/unisports.webp'
 
 const ROLES = ['Frontend Developer', 'UI/UX Enthusiast', 'Problem Solver', 'React Developer']
 
 const SKILLS = [
   { label: 'React', color: '#61DAFB' },
-  { label: 'Node.js', color: '#68A063' },
+  { label: 'Figma', color: '#F05032' },
   { label: 'JavaScript', color: '#F7DF1E' },
   { label: 'Tailwind CSS', color: '#38BDF8' },
   { label: 'MongoDB', color: '#47A248' },
@@ -164,7 +164,7 @@ export default function Home() {
         </div>
       </section>
       {/* ── About ── */}
-      <section className="relative z-10 py-12 px-6 max-w-5xl mx-auto" id="about">
+      <section className="relative z-10 pb-12 pt-8 px-6 max-w-5xl mx-auto" id="about">
         <motion.div className="grid md:grid-cols-2 gap-16 items-center"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -209,6 +209,11 @@ export default function Home() {
             ))}
           </div>
           </motion.div>
+            <div className="flex justify-center mt-6">
+            <a href="/about" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+                About Me
+            </a>
+        </div>
       </section>
 
       {/* Floating decorations removed for a solid background */}
@@ -231,7 +236,7 @@ export default function Home() {
       `}</style>
 
       {/* ── Projects ── */}
-      <section className="relative z-10 py-8 px-6 max-w-5xl mx-auto" id="projects">
+      <section className="relative z-10 py-12 px-6 max-w-5xl mx-auto" id="projects">
         <div className="font-main text-white ">
             Featured Projects
         </div>
@@ -278,7 +283,7 @@ export default function Home() {
 
       </section>
       {/* ── Contact ── */}
-      <section className="relative z-10 py-16 px-6 max-w-5xl mx-auto" id="contact">
+      <section className="relative z-10 pt-12 pb-16 px-6 max-w-5xl mx-auto" id="contact">
         <div className="font-main text-white mb-4 flex flex-col items-center"> 
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/50 text-[11px] uppercase tracking-widest font-main mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-white" />

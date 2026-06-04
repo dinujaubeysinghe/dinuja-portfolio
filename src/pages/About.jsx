@@ -1,4 +1,4 @@
-import aboutBg from '../assets/dinuja_abouts2.jpeg'
+import aboutBg from '../assets/dinuja_abouts2.webp'
 import { motion } from 'framer-motion'
 
 const About = () => {

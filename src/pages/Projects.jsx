@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
 // ─── ADD YOUR PROJECT IMAGES HERE ────────────────────────────────────────────
-import project1 from '../assets/projects/wageesha_portfolio.png'
-import project2 from '../assets/projects/unisports.png'
-import project3 from '../assets/projects/Smart Campus/sdpT.png'
-import project4 from '../assets/projects/sportify/spdp2.png'
-import project5 from '../assets/projects/Figma/fdpT.png'
+import project1 from '../assets/projects/wageesha_portfolio.webp'
+import project2 from '../assets/projects/unisports.webp'
+import project3 from '../assets/projects/Smart Campus/sdpT.webp'
+import project4 from '../assets/projects/sportify/spdp2.webp'
+import project5 from '../assets/projects/Figma/fdpT.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
@@ -133,9 +133,6 @@ const Projects = () => {
                     {project.title}
                   </div>
                 </div>
-                <span className="text-white/30 group-hover:text-white/70 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200 text-lg mt-1 shrink-0">
-                  ↗
-                </span>
               </div>
 
               {/* Tech pills + links */}

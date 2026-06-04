@@ -64,15 +64,19 @@ const Education = () => {
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-3'>
                         <div className='flex gap-4 flex-col'>
                             <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Web Development</div>
+                            <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>IT Project Management</div>
+                        </div>
+                        <div className='flex gap-4 flex-col'>
+                            <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>UI/UX Design </div>
+                            <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Responsive Web Design</div>
+                        </div>
+                        <div className='flex gap-4 flex-col'>
                             <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Database Management Systems</div>
+                            <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Component Based Development</div>
                         </div>
                         <div className='flex gap-4 flex-col'>
                             <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Mobile Application Development</div>
                             <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Network Management</div>
-                        </div>
-                        <div className='flex gap-4 flex-col'>
-                            <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>IT Project Management</div>
-                            <div className='w-full border border-white/10 rounded-lg px-4 py-2 text-md text-white/70'>Emerging Technologies</div>
                         </div>
                     </div>
 
@@ -97,6 +101,7 @@ const Education = () => {
                             <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">MongoDB</span>
                             <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">MySQL</span>
                             <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Git &amp; GitHub</span>
+                            <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">Figma</span>
                         </div>
                     </motion.div>
                 </motion.div>
