@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import project1 from '../assets/projects/wageesha_portfolio.webp'
 import project2 from '../assets/projects/unisports.webp'
 
-const ROLES = ['Frontend Developer', 'UI/UX Enthusiast', 'Problem Solver', 'React Developer']
+const ROLES = ['Full Stack Developer','Problem Solver', 'UI/UX Enthusiast',  'React Developer']
 
 const SKILLS = [
   { label: 'React', color: '#61DAFB' },
@@ -122,7 +122,7 @@ export default function Home() {
           }}
         >
           I craft clean, performant web experiences with a passion for elegant code
-          and thoughtful design. Based in Sri Lanka, building for the world.
+          and thoughtful design. Based in DownSouth, Sri Lanka.
         </p>
 
         {/* CTA buttons */}
@@ -242,6 +242,22 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           <motion.div
+            className="mt-4 text-white/50 rounded-2xl w-full md:w-1/2"
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.18 }}
+          >
+            <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
+                <a href="/projects/1" rel="noopener noreferrer">
+                    <img src={project2} alt="Project 2" className="rounded-2xl h-full w-full object-cover" />
+                </a>
+            </div>
+            <div className="text-white mt-2 text-lg font-main pl-3">
+                UniSport - Full Stack Project
+            </div>
+          </motion.div>
+          <motion.div
             className="mt-4 text-white rounded-2xl w-full md:w-1/2"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -249,7 +265,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.08 }}
           >
             <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
-                <a href="/projects/1" rel="noopener noreferrer">
+                <a href="/projects/3" rel="noopener noreferrer">
                     <img src={project1} alt="Project 1" className="rounded-2xl h-full w-full object-cover" />
                 </a>
             </div>
@@ -258,22 +274,7 @@ export default function Home() {
             </div>
           
           </motion.div>
-          <motion.div
-            className="mt-4 text-white/50 rounded-2xl w-full md:w-1/2"
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: 0.18 }}
-          >
-            <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
-                <a href="/projects/2" rel="noopener noreferrer">
-                    <img src={project2} alt="Project 2" className="rounded-2xl h-full w-full object-cover" />
-                </a>
-            </div>
-            <div className="text-white mt-2 text-lg font-main pl-3">
-                UniSport - Campus Project
-            </div>
-          </motion.div>
+          
         </div>
         <div className="flex justify-center mt-6">
             <a href="/projects" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">

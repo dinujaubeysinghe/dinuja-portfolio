@@ -50,54 +50,27 @@ import fdp10 from '../assets/projects/Figma/fdp10.webp'
 import fdp11 from '../assets/projects/Figma/fdp11.webp'
 import fdp12 from '../assets/projects/Figma/fdp12.webp'
 
+// ── AW Chem images ──
+import aw1 from '../assets/projects/AW Chem/aw1.webp'
+import aw2 from '../assets/projects/AW Chem/aw2.webp'
+import aw3 from '../assets/projects/AW Chem/aw3.webp'
+import aw4 from '../assets/projects/AW Chem/aw4.webp'
+import aw5 from '../assets/projects/AW Chem/aw5.webp'
+import aw6 from '../assets/projects/AW Chem/aw6.webp'
+import aw7 from '../assets/projects/AW Chem/aw7.webp'
+import aw8 from '../assets/projects/AW Chem/aw8.webp'
+
 const projects = [
   {
     id: 1,
     number: '01',
-    title: 'Wageesha Diaz Portfolio',
-    tagline: 'A modern portfolio website for a compere, announcer, and voiceover artist.',
-    description: `A modern and interactive portfolio website developed to showcase the professional profile of Wageesha Diaz as a compere, announcer, and voiceover artist. The platform serves as a central hub for presenting professional experience, event appearances, voiceover services, and contact information through a visually engaging and user-friendly interface.
-
-I was responsible for designing and developing the complete portfolio website using React and Vite. I created a responsive user interface with smooth navigation, modern layouts, and engaging animations to enhance the user experience. A strong hero section and personal branding elements were implemented to effectively communicate Wageesha's professional identity and services.
-
-I developed dedicated sections for About, Events, Voiceover Services, and Contact, ensuring content was organized and easily accessible. To create a premium browsing experience, I integrated scroll-based animations and page transition effects using Framer Motion and Lenis. Additionally, I built an event showcase section to highlight hosting and public speaking engagements and implemented a contact form with EmailJS to facilitate booking requests and inquiries.
-
-The website was optimized for responsiveness across desktop, tablet, and mobile devices, ensuring a consistent experience for all visitors.
-
-Outcome: Delivered a professional and visually appealing portfolio website that strengthens personal branding, showcases services effectively, and provides a seamless way for potential clients and event organizers to connect with Wageesha Diaz.`,
-    status: 'Completed',
-    year: '2026',
-    github: 'https://github.com/dinujaubeysinghe/senura_portfolio',
-    live: 'https://wageeshadiaz.online/',
-    tech: ['React', 'Vite', 'React Router', 'Framer Motion', 'Lenis', 'Tailwind CSS', 'EmailJS', 'Git'],
-    features: [
-      'Responsive portfolio interface with modern layouts and smooth navigation',
-      'Dedicated About, Events, Voiceover Services, and Contact sections',
-      'Scroll-based animations and page transitions using Framer Motion and Lenis',
-      'Event showcase and EmailJS contact form for booking requests and inquiries',
-    ],
-    screenshots: [
-      { src: wageeshaPortfolio, caption: 'Professional hero and branding' },
-      { src: wdp2, caption: 'About section' },
-      { src: wdp3, caption: 'Event showcase section' },
-      { src: wdp4, caption: 'Contact section' },
-      { src: wdp5, caption: 'About Page' },
-      { src: wdp6, caption: 'Event showcase' },
-      { src: wdp7, caption: 'Voiceover services' },
-      { src: wdp8, caption: 'Contact Page' },
-      { src: wdp9, caption: 'Contact form' },
-    ],
-  },
-  {
-    id: 2,
-    number: '02',
     title: 'UniSport',
     tagline: 'A secure sports, tournaments and sports items platform for university ',
     description: `A comprehensive sports management platform developed to support university sports administration through secure user management, role-based access control, and integrated payment processing. The system enables administrators, coaches, and students to efficiently manage sports activities, registrations, memberships, and event-related payments within a centralized platform.
 
-My contribution focused on the User Management and Payment Management modules. I implemented secure authentication and authorization using JWT, role-based access control, and password hashing to support Admin, Coach, and Student roles. I also developed user profile management features and REST APIs for user administration and authentication.
+My contribution focused on the User Management and Payment Management modules. I implemented secure authentication and authorization using JWT, role-based access control, and password hashing to support Admin, Coach, and Student roles. I also developed user profile management features and REST APIs for users.
 
-For the Payment Management module, I designed and implemented payment workflows including order creation, checkout processes, payment status tracking, success and failure handling, and transaction recording. I built backend payment APIs and transaction models to manage payments securely, enforce data integrity, and maintain accurate payment records. On the frontend, I developed responsive payment interfaces and dashboards that allowed users to view payment details, track transactions, and manage payment-related activities seamlessly.
+For the Payment Management module, I designed and implemented payment workflows including order creation, checkout processes, payment status tracking, and transaction recording. I built backend payment APIs and transaction models to manage payments securely, enforce data integrity, and maintain accurate payment records. On the frontend, I developed responsive payment interfaces and dashboards that allowed users to view payment details, track transactions, and manage payment-related activities seamlessly.
 
 Additionally, I implemented server-side validation, optimized data fetching using Axios, and integrated role-based dashboards to provide a personalized experience for different user types.
 
@@ -105,7 +78,7 @@ Outcome: Delivered a secure, scalable, and maintainable sports management platfo
     status: 'Completed',
     year: '2026',
     github: 'https://github.com/dilumiattanayake/Uni_Sports/',
-    live: 'https://www.loom.com/share/795a9ae816aa4feb9a1ed7187176af5f',
+    live: 'https://uni-sports-tau.vercel.app/',
     tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'TypeScript', 'Mongoose', 'REST API', 'JWT Authentication', 'React Context API', 'Tailwind CSS', 'Git', 'Postman'],
     features: [
       'Secure authentication and role-based access control for Admin, Coach, and Student roles',
@@ -128,8 +101,80 @@ Outcome: Delivered a secure, scalable, and maintainable sports management platfo
     ],
   },
   {
+    id: 2,
+    number: '02',
+    title: 'AW CHEM',
+    tagline: 'A LMS for a Chemistry tutor to manage classes, studentsa and quizzes',
+    description: `AW Chemistry LMS is a tution class focused Learning Management System designed to provide students and administrators with a smooth and organized digital learning experience. The application was designed using Figma with a strong focus on creating a clean, modern, and user friendly educational interface that simplifies online learning and academic management.
+
+The platform includes a role based system where both students and administrators can securely register and log into the system. Students are able to access chemistry classes, participate in quizzes, and view their quiz results through an intuitive dashboard experience. Administrators are provided with a dedicated management interface that allows them to create and manage classes, add or remove quizzes, and update student quiz results efficiently.
+
+I designed UI/UX of the platform from scratch. This included designing the authentication flow, landing page, student dashboard, admin dashboard, class management, quiz interfaces, and result management sections. Special attention was given to maintaining visual consistency, easy navigation, and an engaging educational experience throughout the platform.
+
+Outcome: Delivered a modern and visually polished LMS UI/UX design that improves accessibility and usability for both students and administrators while creating a professional digital learning environment for chemistry education.`,
+    status: 'Completed',
+    year: '2026',
+    github: 'https://github.com/dinujaubeysinghe/awchem-figma',
+    live: 'https://www.figma.com/proto/IC9KiJJ1dfbOWiso7ow4WU/AWCHEM?node-id=0-1&t=F6A5nuZhi9WHHM4X-1',
+    tech: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Web App Design'],
+    features: [
+      'Designed and prototyped a Chemistry Learning Management System (LMS)',
+      'Implemented role-based user experiences for Students and Administrators',
+      'Created student learning workflows including class access, quizzes, and result monitoring',
+      'Consistent UI/UX design system ensuring accessibility, usability, and visual coherence across all modules',
+    ],
+    screenshots: [
+      { src: aw1, caption: 'Hero section' },
+      { src: aw2, caption: 'About section' },
+      { src: aw3, caption: 'Classes section' },
+      { src: aw4, caption: 'Footer' },
+      { src: aw5, caption: 'Registration page' },
+      { src: aw6, caption: 'Login page' },
+      { src: aw7, caption: 'Student dashboard' },
+      { src: aw8, caption: 'Admin dashboard' },
+      
+    ],
+  },
+  {
     id: 3,
     number: '03',
+    title: 'Wageesha Diaz Portfolio',
+    tagline: 'A modern portfolio website for a compere, announcer, and voiceover artist.',
+    description: `A modern and interactive portfolio website developed to showcase the professional profile of Wageesha Diaz as a compere, announcer, and voiceover artist. The platform serves as a central hub for presenting professional experience, event appearances, voiceover services, and contact information through a visually engaging and user-friendly interface.
+
+I was responsible for designing and developing the complete portfolio website using React and Vite. I created a responsive user interface with smooth navigation, modern layouts, and engaging animations to enhance the user experience. A strong hero section and personal branding elements were implemented to effectively communicate Wageesha's professional identity and services.
+
+I developed dedicated sections for About, Events, Voiceover Services, and Contact, ensuring content was organized and easily accessible. To create a premium browsing experience, I integrated scroll-based animations and page transition effects using Framer Motion and Lenis. Additionally, I built an event showcase section to highlight hosting and public speaking engagements and implemented a contact form with EmailJS to facilitate booking requests and inquiries.
+
+The website was optimized for responsiveness across desktop, tablet, and mobile devices, ensuring a consistent experience for all visitors.
+
+Outcome: Delivered a professional and visually appealing portfolio website that strengthens personal branding, showcases services effectively, and provides a seamless way for potential clients and event organizers to connect with Wageesha Diaz.`,
+    status: 'Completed',
+    year: '2026',
+    github: 'https://github.com/dinujaubeysinghe/senura_portfolio',
+    live: 'https://wageeshadiaz.online/',
+    tech: ['React', 'Vite', 'React Router', 'Motions', 'Lenis', 'Tailwind CSS', 'EmailJS', 'Git'],
+    features: [
+      'Responsive portfolio interface with modern layouts and smooth navigation',
+      'Dedicated About, Events, Voiceover Services, and Contact sections',
+      'Scroll-based animations and page transitions using Framer Motion and Lenis',
+      'Event showcase and EmailJS contact form for booking requests and inquiries',
+    ],
+    screenshots: [
+      { src: wageeshaPortfolio, caption: 'Professional hero and branding' },
+      { src: wdp2, caption: 'About section' },
+      { src: wdp3, caption: 'Event showcase section' },
+      { src: wdp4, caption: 'Contact section' },
+      { src: wdp5, caption: 'About Page' },
+      { src: wdp6, caption: 'Event showcase' },
+      { src: wdp7, caption: 'Voiceover services' },
+      { src: wdp8, caption: 'Contact Page' },
+      { src: wdp9, caption: 'Contact form' },
+    ],
+  },
+  {
+    id: 4,
+    number: '04',
     title: 'Smart Campus Hub',
     tagline: 'A campus maintenance and incident ticketing system with secure role-based workflow management.',
     description: `A full-stack web application developed to streamline campus maintenance operations and incident reporting. The system enables users to report issues, upload supporting files, track ticket progress, and communicate with technicians through a secure role-based workflow.
@@ -159,8 +204,8 @@ This module helped streamline campus maintenance operations by improving issue r
     ],
   },
   {
-    id: 4,
-    number: '04',
+    id: 5,
+    number: '05',
     title: 'Sportify',
     tagline: 'Sports equipment e-commerce platform with secure shopping and payment management.',
     description: `Sportify is a full stack e-commerce platform developed for a real world client specializing in sports equipment sales. The system was designed to provide customers with a convenient online shopping experience while helping the business manage products, orders, payments, and inventory through a centralized digital platform.
@@ -193,8 +238,8 @@ Outcome: Delivered a secure and scalable e-commerce solution that streamlined sp
     ],
   },
   {
-    id: 5,
-    number: '05',
+    id: 6,
+    number: '06',
     title: 'Graphify',
     tagline: 'A custom print on demand marketplace where users can buy and sell personalized printed products.',
     description: `Graphify is a print on demand e-commerce platform designed to connect buyers and sellers through a seamless and intuitive interface. The application was designed using Figma, focusing on delivering a clean, modern, and user-friendly experience across all screens.

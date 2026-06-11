@@ -39,15 +39,15 @@ const About = () => {
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">
-            I am an Information Technology undergraduate with a strong passion for software development and creating meaningful digital experiences. I enjoy turning ideas into practical solutions through technology and continuously expanding my knowledge in modern software development practices.
+            I am an Information Technology undergraduate with a strong passion for full stack development and building end-to-end software solutions that deliver meaningful user experiences. I enjoy turning ideas into practical solutions through technology and continuously expanding my knowledge in modern software development practices.
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">
-            My primary interest lies in frontend development and UI/UX design, where I focus on building responsive, user-friendly, and visually appealing web applications. I have experience working with technologies such as React, JavaScript, Tailwind CSS, Node.js, and MongoDB to create modern web solutions.
+           My interests span across the entire development lifecycle, from designing intuitive and responsive user interfaces to developing robust server-side applications and managing databases. I have experience working with technologies such as React, JavaScript, Tailwind CSS, Node.js, and MongoDB to create modern web solutions.
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">
-            I am always eager to learn new technologies, take on challenging projects, and improve my technical skills. My goal is to contribute to innovative software projects, gain industry experience, and grow into a skilled software engineer who delivers high-quality digital products.
+            I am always eager to learn new technologies, take on challenging projects, and improve my technical skills. My goal is to contribute to innovative software projects, gain industry experience, and grow into a skilled full stack developer who delivers high-quality digital products.
           </div>
 
           <div className="text-white/70 font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-sm flex items-center gap-3">

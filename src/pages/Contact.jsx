@@ -95,7 +95,7 @@ const Contact = () => {
           </h3>
 
           <p className="text-sm text-white/70">
-            Frontend Developer • React
+            Full Stack Developer
           </p>
 
           <div className="mt-2">
@@ -175,7 +175,7 @@ const Contact = () => {
             name="reply_to"
             aria-required="true"
             type="email"
-            placeholder="Email@domain.com"
+            placeholder="Email@gmail.com"
             className="w-full p-2 bg-transparent border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/30"
           />
 

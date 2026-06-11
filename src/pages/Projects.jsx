@@ -8,43 +8,45 @@ import project2 from '../assets/projects/unisports.webp'
 import project3 from '../assets/projects/Smart Campus/sdpT.webp'
 import project4 from '../assets/projects/sportify/spdp2.webp'
 import project5 from '../assets/projects/Figma/fdpT.webp'
+import project6 from '../assets/projects/AW Chem/awhome.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
-  {
+   {
     id: 1,
     number: '01',
-    title: 'Wageesha Diaz Portfolio',
-    description: 'A modern personal portfolio website designed and developed to showcase skills, projects, and experience as a frontend developer.',
-    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
-    image: project1,
+    title: 'UniSport — Full Stack Project',
+    description: 'A campus sports management platform built as an academic project, allowing students to register, manage, and track university sports events.',
+    tech: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT Authentication', 'Tailwind CSS'],
+    image: project2,
     featured: true,
   },
+  
   {
     id: 2,
     number: '02',
-    title: 'UniSport — Campus Project',
-    description: 'A campus sports management platform built as an academic project, allowing students to register, manage, and track university sports events.',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    image: project2,
+    title: 'AW Chem — Figma Project',
+    description: 'Short description.',
+    tech: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Web App Design'],
+    image: project6,
     featured: false,
   },
   {
     id: 3,
     number: '03',
-    title: 'Smart Campus Hub — Academic Project',
-    description: 'Short description.',
-    tech: ['React', 'Spring Boot', 'Tailwind CSS'],
-    image: project3,
-    featured: false,
+    title: 'Wageesha Diaz Portfolio',
+    description: 'A modern personal portfolio website designed and developed to showcase skills, projects, and experience as a frontend developer.',
+    tech: ['React', 'Tailwind CSS', 'Motions', 'EmailJS'],
+    image: project1,
+    featured: true,
   },
   {
     id: 4,
     number: '04',
-    title: 'Sportify — Campus Project',
-    description: 'Another short description.',
-    tech: ['React', 'Express', 'Node.js', 'MongoDB'],
-    image: project4     ,
+    title: 'Smart Campus Hub — Full Stack Project',
+    description: 'Short description.',
+    tech: ['React', 'Spring Boot', 'Tailwind CSS', 'REST API', 'MongoDB'],
+    image: project3,
     featured: false,
   },
   {
@@ -91,7 +93,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.12 }}
         >
-          Coded at 2am, deployed at 6am, still working today. Those should make my AMMA proud.
+          Coded at 2am, deployed at 6am, still working today.
         </motion.p>
       </div>
 
