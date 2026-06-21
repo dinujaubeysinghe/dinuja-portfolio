@@ -121,8 +121,7 @@ export default function Home() {
             transition: 'opacity 0.7s ease 0.35s, transform 0.7s ease 0.35s',
           }}
         >
-          I craft clean, performant web experiences with a passion for elegant code
-          and thoughtful design. Based in DownSouth, Sri Lanka.
+          I am an IT undergraduate student passionate about code and thoughtful design. Based in DownSouth, Sri Lanka.
         </p>
 
         {/* CTA buttons */}

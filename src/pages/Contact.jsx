@@ -95,7 +95,9 @@ const Contact = () => {
           </h3>
 
           <p className="text-sm text-white/70">
-            Full Stack Developer
+            Full Stack Developer &<br/><span className="text-sm text-white/70">
+           IT undergraduate
+          </span>
           </p>
 
           <div className="mt-2">

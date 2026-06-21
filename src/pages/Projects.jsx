@@ -9,6 +9,7 @@ import project3 from '../assets/projects/Smart Campus/sdpT.webp'
 import project4 from '../assets/projects/sportify/spdp2.webp'
 import project5 from '../assets/projects/Figma/fdpT.webp'
 import project6 from '../assets/projects/AW Chem/awhome.webp'
+import project7 from '../assets/projects/Ash/ash1.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
@@ -58,6 +59,15 @@ const projects = [
     image: project5     ,
     featured: false,
   },
+  {
+    id: 6,
+    number: '06',
+    title: 'Ash Design Studio Portfolio',
+    description: '',
+    tech: ['React', 'Tailwind CSS', 'EmailJS'], 
+    image: project7,
+    featured: false,
+  },
 ]
 
 const Projects = () => {
@@ -86,15 +96,6 @@ const Projects = () => {
         >
          Showcase
         </motion.h2>
-        <motion.p
-          className="text-base md:text-lg text-white/70 mt-6 text-center max-w-2xl font-main"
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.12 }}
-        >
-          Coded at 2am, deployed at 6am, still working today.
-        </motion.p>
       </div>
 
       {/* ── Grid ── */}

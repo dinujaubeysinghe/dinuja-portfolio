@@ -60,6 +60,14 @@ import aw6 from '../assets/projects/AW Chem/aw6.webp'
 import aw7 from '../assets/projects/AW Chem/aw7.webp'
 import aw8 from '../assets/projects/AW Chem/aw8.webp'
 
+// ── Ash Design Studio images ──
+import ash1 from '../assets/projects/Ash/ash1.webp'
+import ash2 from '../assets/projects/Ash/ash2.webp'
+import ash3 from '../assets/projects/Ash/ash3.webp'
+import ash4 from '../assets/projects/Ash/ash4.webp'
+import ash5 from '../assets/projects/Ash/ash5.webp'
+import ash6 from '../assets/projects/Ash/ash6.webp'
+
 const projects = [
   {
     id: 1,
@@ -206,40 +214,6 @@ This module helped streamline campus maintenance operations by improving issue r
   {
     id: 5,
     number: '05',
-    title: 'Sportify',
-    tagline: 'Sports equipment e-commerce platform with secure shopping and payment management.',
-    description: `Sportify is a full stack e-commerce platform developed for a real world client specializing in sports equipment sales. The system was designed to provide customers with a convenient online shopping experience while helping the business manage products, orders, payments, and inventory through a centralized digital platform.
-
-I was responsible for designing and developing the Shopping Cart and Payment Management modules of the application. I implemented a dynamic shopping cart that allows customers to browse sports equipment, add and remove products, update quantities, and review order summaries before checkout. The module was designed to provide a smooth and user-friendly purchasing experience while ensuring accurate pricing and cart calculations.
-
-I also developed the Payment Management functionality, including order processing, payment workflows, transaction tracking, payment status management, and purchase confirmation handling. Secure backend APIs were implemented to manage payment-related operations, while responsive frontend interfaces were created to display payment details, transaction records, and order summaries. These features helped ensure a reliable and transparent payment process for both customers and administrators.
-
-The application was developed with a strong focus on usability, security, and responsiveness, delivering a seamless shopping experience across desktop, tablet, and mobile devices.
-
-Outcome: Delivered a secure and scalable e-commerce solution that streamlined sports equipment sales, simplified payment processing, enhanced customer convenience, and supported the client's business growth through an improved online presence.`,
-    status: 'Completed',
-    year: '2025',
-    github: 'https://github.com/dinujaubeysinghe/Sportify',
-    live: 'https://www.loom.com/share/3800b50aaf824020a0dcd4f3c2878673',
-    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JavaScript', 'Mongoose', 'REST API', 'JWT Authentication', 'React Context API', 'Tailwind CSS', 'Git', 'Postman'],
-    features: [
-      'Dynamic Shopping Cart with Add, Remove, and Quantity Update Functionality',
-      'Order Summary and Cart Total Calculation',
-      'Integration Between Shopping Cart and Payment Modules',
-      'Payment Status Tracking and Management',
-      'Order Confirmation and Purchase Summary',
-    ],
-    screenshots: [
-      { src: spdp2, caption: 'Shopping cart page' },
-      { src: spdp1, caption: 'Home page' },
-      { src: spdp3, caption: 'Checkout shipping' },
-      { src: spdp4, caption: 'Checkout payment' },
-      { src: spdp5, caption: 'Checkout confirmation' },
-    ],
-  },
-  {
-    id: 6,
-    number: '06',
     title: 'Graphify',
     tagline: 'A custom print on demand marketplace where users can buy and sell personalized printed products.',
     description: `Graphify is a print on demand e-commerce platform designed to connect buyers and sellers through a seamless and intuitive interface. The application was designed using Figma, focusing on delivering a clean, modern, and user-friendly experience across all screens.
@@ -288,6 +262,46 @@ Outcome: Delivered a comprehensive and visually polished UI/UX design that clear
   { src: fdp12, caption: 'User account access and personalized experience entry point' },
 ]
   },
+ {
+    id: 6,
+    number: '06',
+    title: 'Ash Design Studio',
+    tagline: 'A modern portfolio website built to showcase the creative work of a professional graphic designer and artist.',
+    description: `Ash Design Studio is a portfolio website developed to present the professional creative work of Ashen Dewinda, a graphic designer and artist based in Sri Lanka. The platform brings together a wide range of work, including pencil art, social media post design, brand design, printing designs, thumbnail design, manipulations, and UI/UX design, all organized into a visually engaging, gallery driven experience.
+
+I was responsible for designing and developing the complete website using React, Vite, and Tailwind CSS v4. I built a responsive multi page interface featuring a frosted glass navbar with a gallery dropdown, smooth Framer Motion page transitions with a custom curtain reveal effect, and a refined "Graphite Studio" visual identity using a neutral gray palette paired with Cormorant Garamond and DM Sans typography.
+
+The site includes Home, Gallery, About, and Contact pages, along with dedicated gallery category pages for Pencil Art, Social Media Posts, Brand Designs, Printing Designs, Thumbnails, Manipulations, and UI/UX Designs. Each category showcases a curated set of work through a Pinterest style masonry layout with lightbox viewing and easy category browsing, along with a load more feature on the main gallery. A commission request form and integrated social links to Instagram, Facebook, TikTok, YouTube, and Behance round out the experience.
+
+Outcome: Delivered a polished, professional portfolio website that strengthens Ashen Dewinda's personal brand, organizes a wide ranging creative portfolio into an intuitive browsing experience, and gives potential clients a clear, visually compelling way to discover and get in touch about his design services.`,
+    status: 'Completed',
+    year: '2026',
+    github: 'https://github.com/dinujaubeysinghe/ash_arts',
+    live: 'https://ash-arts.vercel.app/',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'React Router', 'React Icons'],
+    features: [
+      'Masonry Gallery — Pinterest style layout with lightbox viewing',
+      'Category Browsing — Dedicated pages for Pencil Art, Social Media Posts, Brand Designs, Printing Designs, Thumbnails, Manipulations, and UI/UX Designs',
+      'Curtain Page Transitions — Custom animated navigation using Framer Motion',
+      'Frosted Glass Navbar — Scroll aware navigation with a gallery dropdown',
+      'Commission Form — Contact page with a working request form and success state',
+      'Fully Responsive — Optimized for desktop, tablet, and mobile devices',
+    ],
+    screenshots: [
+  { src: ash1, caption: 'Home page hero section' },
+
+  { src: ash2, caption: 'About Section' },
+
+  { src: ash3, caption: 'Gallery Section' },
+
+  { src: ash4, caption: 'About Page' },
+
+  { src: ash5, caption: 'All Designs Page' },
+
+  { src: ash6, caption: 'Contact Page' },
 ]
+  },
+]
+
 
 export default projects

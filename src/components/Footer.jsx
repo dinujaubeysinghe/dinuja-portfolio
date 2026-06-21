@@ -4,13 +4,25 @@ const Footer = () => {
   return (
     <footer className='py-8 border-t border-b border-white/20 transition-colors '>
       <div className='flex justify-center gap-4 mx-24 mb-4'>
-        <a href='https://www.linkedin.com/in/dinuja-ubeysinghe-620317311/' target='_blank' rel='noreferrer' aria-label='LinkedIn' className='text-white hover:text-slate-400'>
+        <a href='https://www.linkedin.com/in/dinuja-ubeysinghe-620317311/' 
+        target='_blank' 
+        rel='noreferrer' 
+        aria-label='LinkedIn' 
+        className='text-white/80 hover:text-white hover:scale-112 transition-transform duration-300'>
           <FaLinkedin size={20} />
         </a>
-        <a href='https://www.instagram.com/_ubey_____/' target='_blank' rel='noreferrer' aria-label='Instagram' className='text-white hover:text-slate-400'>
+        <a href='https://www.instagram.com/_ubey_____/' 
+        target='_blank' 
+        rel='noreferrer' 
+        aria-label='Instagram' 
+        className='text-white/80 hover:text-white hover:scale-112 transition-transform duration-300'>
           <FaInstagram size={20} />
         </a>
-        <a href='https://wa.me/' target='_blank' rel='noreferrer' aria-label='WhatsApp' className='text-white hover:text-slate-400'>
+        <a href='https://wa.me/94766154657' 
+        target='_blank' 
+        rel='noreferrer' 
+        aria-label='WhatsApp' 
+        className='text-white/80 hover:text-white hover:scale-112 transition-transform duration-300'>
           <FaWhatsapp size={20} />
         </a>
       </div>
