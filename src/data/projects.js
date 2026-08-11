@@ -68,6 +68,19 @@ import ash4 from '../assets/projects/Ash/ash4.webp'
 import ash5 from '../assets/projects/Ash/ash5.webp'
 import ash6 from '../assets/projects/Ash/ash6.webp'
 
+// ── AWCHEM images ──
+import awchem1 from '../assets/projects/AWCHEM/asw1.webp'
+import awchem2 from '../assets/projects/AWCHEM/asw2.webp'
+import awchem3 from '../assets/projects/AWCHEM/asw3.webp'
+import awchem4 from '../assets/projects/AWCHEM/asw4.webp'
+import awchem5 from '../assets/projects/AWCHEM/asw5.webp'
+import awchem6 from '../assets/projects/AWCHEM/asw6.webp'
+import awchem7 from '../assets/projects/AWCHEM/asw7.webp'
+import awchem8 from '../assets/projects/AWCHEM/asw8.webp'
+import awchem9 from '../assets/projects/AWCHEM/asw9.webp'
+import awchem10 from '../assets/projects/AWCHEM/asw10.webp'
+import awchem11 from '../assets/projects/AWCHEM/asw11.webp'
+
 const projects = [
   {
     id: 1,
@@ -111,8 +124,47 @@ Outcome: Delivered a secure, scalable, and maintainable sports management platfo
   {
     id: 2,
     number: '02',
+    title: 'AWCHEM',
+    tagline: 'A/L chemistry tutoring platform for learning science stream students',
+    description: `A comprehensive chemistry tutoring platform built for an A/L (Advanced Level) chemistry teacher to manage classes, quizzes, and student progress, with full Sinhala-language content support. The system enables administrators to manage students, classes, and quizzes, while students track their enrollments, results, and weekly class progress through a dedicated dashboard.
+
+I developed the platform end-to-end as the sole developer, building a Laravel REST API backend paired with a React and Tailwind CSS frontend. I implemented full authentication including registration, email verification, and password reset, along with role-based dashboards and layouts for Admin and Student users.
+
+On the admin side, I built CRUD systems for managing students, classes, quizzes, results, and notices, including a class-quiz pivot system with type-conditional fields for physical and online sessions. I implemented schedule conflict validation to prevent overlapping class times for the same teacher, and quiz-day matching validation to ensure quiz dates align with a class's recurring weekday.
+
+For students, I built an enrollment flow with confirmation safeguards, a results tracking system with unique constraints, and a weekly class progress feature where admins post lecture updates with PDF and video links, which students view through a read-only expandable timeline.
+
+Outcome: Delivered a secure, Sinhala-language chemistry tutoring platform that streamlined class scheduling, quiz assignment, and student progress tracking for both the teacher administrator and enrolled students.`,
+    status: 'In Progress',
+    year: '2026',
+    github: 'https://github.com/dinujaubeysinghe/AWCHEM',
+    live: '',
+    tech: ['Laravel 13', 'React', 'Vite', 'Tailwind CSS v4', 'MySQL', 'REST API', 'Axios', 'PHP', 'JavaScript', 'Git'],
+    features: [
+      'Role-based dashboards and layouts for Admin and Student users',
+      'Admin CRUD for students, classes, quizzes, results, and notices',
+      'Schedule conflict and quiz-day matching validation for classes and quizzes',
+      'Weekly class progress timeline with lecture, PDF, and video link updates',
+    ],
+    screenshots: [
+      { src: awchem1, caption: 'Landing page' },
+      { src: awchem2, caption: 'Login page' },
+      { src: awchem3, caption: 'Admin dashboard' },
+      { src: awchem4, caption: 'Class management' },
+      { src: awchem5, caption: 'Quiz management' },
+      { src: awchem6, caption: 'Results tracking' },
+      { src: awchem7, caption: 'Student dashboard' },
+      { src: awchem8, caption: 'Student classes' },
+      { src: awchem9, caption: 'Progress tracking' },
+      { src: awchem10, caption: 'Student quiz' },
+      { src: awchem11, caption: 'Student results' },
+    ],
+  },
+  {
+    id: 3,
+    number: '03',
     title: 'AW CHEM',
-    tagline: 'A LMS for a Chemistry tutor to manage classes, studentsa and quizzes',
+    tagline: 'A/L chemistry tutoring platform for classes, quizzes, and student progress',
     description: `AW Chemistry LMS is a tution class focused Learning Management System designed to provide students and administrators with a smooth and organized digital learning experience. The application was designed using Figma with a strong focus on creating a clean, modern, and user friendly educational interface that simplifies online learning and academic management.
 
 The platform includes a role based system where both students and administrators can securely register and log into the system. Students are able to access chemistry classes, participate in quizzes, and view their quiz results through an intuitive dashboard experience. Administrators are provided with a dedicated management interface that allows them to create and manage classes, add or remove quizzes, and update student quiz results efficiently.
@@ -140,12 +192,11 @@ Outcome: Delivered a modern and visually polished LMS UI/UX design that improves
       { src: aw6, caption: 'Login page' },
       { src: aw7, caption: 'Student dashboard' },
       { src: aw8, caption: 'Admin dashboard' },
-      
     ],
   },
   {
-    id: 3,
-    number: '03',
+    id: 4,
+    number: '04',
     title: 'Wageesha Diaz Portfolio',
     tagline: 'A modern portfolio website for a compere, announcer, and voiceover artist.',
     description: `A modern and interactive portfolio website developed to showcase the professional profile of Wageesha Diaz as a compere, announcer, and voiceover artist. The platform serves as a central hub for presenting professional experience, event appearances, voiceover services, and contact information through a visually engaging and user-friendly interface.
@@ -181,8 +232,8 @@ Outcome: Delivered a professional and visually appealing portfolio website that 
     ],
   },
   {
-    id: 4,
-    number: '04',
+    id: 5,
+    number: '05',
     title: 'Smart Campus Hub',
     tagline: 'A campus maintenance and incident ticketing system with secure role-based workflow management.',
     description: `A full-stack web application developed to streamline campus maintenance operations and incident reporting. The system enables users to report issues, upload supporting files, track ticket progress, and communicate with technicians through a secure role-based workflow.
@@ -212,8 +263,8 @@ This module helped streamline campus maintenance operations by improving issue r
     ],
   },
   {
-    id: 5,
-    number: '05',
+    id: 6,
+    number: '06',
     title: 'Graphify',
     tagline: 'A custom print on demand marketplace where users can buy and sell personalized printed products.',
     description: `Graphify is a print on demand e-commerce platform designed to connect buyers and sellers through a seamless and intuitive interface. The application was designed using Figma, focusing on delivering a clean, modern, and user-friendly experience across all screens.
@@ -263,8 +314,8 @@ Outcome: Delivered a comprehensive and visually polished UI/UX design that clear
 ]
   },
  {
-    id: 6,
-    number: '06',
+    id: 7,
+    number: '07',
     title: 'Ash Design Studio',
     tagline: 'A modern portfolio website built to showcase the creative work of a professional graphic designer and artist.',
     description: `Ash Design Studio is a portfolio website developed to present the professional creative work of Ashen Dewinda, a graphic designer and artist based in Sri Lanka. The platform brings together a wide range of work, including pencil art, social media post design, brand design, printing designs, thumbnail design, manipulations, and UI/UX design, all organized into a visually engaging, gallery driven experience.

@@ -10,6 +10,7 @@ import project4 from '../assets/projects/sportify/spdp2.webp'
 import project5 from '../assets/projects/Figma/fdpT.webp'
 import project6 from '../assets/projects/AW Chem/awhome.webp'
 import project7 from '../assets/projects/Ash/ash1.webp'
+import project8 from '../assets/projects/AWCHEM/awchem.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
@@ -22,10 +23,18 @@ const projects = [
     image: project2,
     featured: true,
   },
-  
   {
     id: 2,
     number: '02',
+    title: 'AWCHEM — Full Stack Project',
+    description: 'A Sinhala-language A/L chemistry tutoring platform enabling a teacher to manage classes, quizzes, and student progress with role-based dashboards.',
+    tech: ['Laravel', 'React', 'Vite', 'MySQL', 'REST API', 'Tailwind CSS'],
+    image: project8,
+    featured: true,
+  },
+  {
+    id: 3,
+    number: '03',
     title: 'AW Chem — Figma Project',
     description: 'Short description.',
     tech: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Web App Design'],
@@ -33,8 +42,8 @@ const projects = [
     featured: false,
   },
   {
-    id: 3,
-    number: '03',
+    id: 4,
+    number: '04',
     title: 'Wageesha Diaz Portfolio',
     description: 'A modern personal portfolio website designed and developed to showcase skills, projects, and experience as a frontend developer.',
     tech: ['React', 'Tailwind CSS', 'Motions', 'EmailJS'],
@@ -42,8 +51,8 @@ const projects = [
     featured: true,
   },
   {
-    id: 4,
-    number: '04',
+    id: 5,
+    number: '05',
     title: 'Smart Campus Hub — Full Stack Project',
     description: 'Short description.',
     tech: ['React', 'Spring Boot', 'Tailwind CSS', 'REST API', 'MongoDB'],
@@ -51,8 +60,8 @@ const projects = [
     featured: false,
   },
   {
-    id: 5,
-    number: '05',
+    id: 6,
+    number: '06',
     title: 'Graphify — Campus Project',
     description: '',
     tech: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Mobile App Design'], 
@@ -60,8 +69,8 @@ const projects = [
     featured: false,
   },
   {
-    id: 6,
-    number: '06',
+    id: 7,
+    number: '07',
     title: 'Ash Design Studio Portfolio',
     description: '',
     tech: ['React', 'Tailwind CSS', 'EmailJS'], 

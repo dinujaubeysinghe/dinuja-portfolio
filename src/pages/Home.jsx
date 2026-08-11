@@ -10,7 +10,7 @@ const SKILLS = [
   { label: 'Figma', color: '#F05032' },
   { label: 'JavaScript', color: '#F7DF1E' },
   { label: 'Tailwind CSS', color: '#38BDF8' },
-  { label: 'MongoDB', color: '#47A248' },
+  { label: 'Laravel', color: '#F05340' },
   { label: 'Express.js', color: '#ffffff' },
   { label: 'TypeScript', color: '#3178C6' },
   { label: 'Git', color: '#F05032' },
