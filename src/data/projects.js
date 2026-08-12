@@ -80,6 +80,16 @@ import awchem8 from '../assets/projects/AWCHEM/asw8.webp'
 import awchem9 from '../assets/projects/AWCHEM/asw9.webp'
 import awchem10 from '../assets/projects/AWCHEM/asw10.webp'
 import awchem11 from '../assets/projects/AWCHEM/asw11.webp'
+import { i } from 'framer-motion/client'
+
+// ── Bentota Samantha Tours & Travels images ──
+import tourism1 from '../assets/projects/BentotaSamantha/bs1.webp'
+import tourism2 from '../assets/projects/BentotaSamantha/bs2.webp'
+import tourism3 from '../assets/projects/BentotaSamantha/bs3.webp'
+import tourism4 from '../assets/projects/BentotaSamantha/bs4.webp'
+import tourism5 from '../assets/projects/BentotaSamantha/bs5.webp'
+import tourism6 from '../assets/projects/BentotaSamantha/bs6.webp'
+import tourism7 from '../assets/projects/BentotaSamantha/bs7.webp'
 
 const projects = [
   {
@@ -351,6 +361,39 @@ Outcome: Delivered a polished, professional portfolio website that strengthens A
 
   { src: ash6, caption: 'Contact Page' },
 ]
+  },
+{
+    id: 8,
+    number: '08',
+    title: 'Bentota Samantha Tours & Travels',
+    tagline: 'Tourism portfolio for a solo tour guide business in Bentota, Sri Lanka',
+    description: `A tourism and booking platform built for Bentota Samantha Tours & Travels, an individual tour guide operation based in Bentota. The site showcases excursions, reviews, and business information, with a contact form for prospective travelers to get in touch directly.
+
+I worked on this as part of a two person team, focused on the React frontend while my collaborator worked on the Laravel backend (planned for future integration). I built out the core page layouts and components, including the Home, About, Contact, and Footer, each following a custom "Forest & Earth" design system with Fraunces and Inter typography and a recurring topographic-line motif used across hero and dark sections.
+
+I implemented the animation and interaction layer using Framer Motion, including scroll parallax hero effects, animated counters, hover-reveal excursion cards and a directional review carousel. I also set up client side routing with React Router, including scroll-restoration on navigation, and integrated EmailJS for the contact form.
+
+Outcome: Delivered a polished, animation rich frontend with a consistent design system, ready to connect to the Laravel backend for full booking and inquiry management once that integration phase begins.`,
+    status: 'In Progress',
+    year: '2026',
+    github: 'https://github.com/dinujaubeysinghe/Tourism-Management-Portal',
+    live: '',
+    tech: ['React', 'Vite', 'Tailwind CSS v4', 'Framer Motion', 'React Router DOM', 'Axios', 'EmailJS', 'Laravel', 'JavaScript', 'Git'],
+    features: [
+      'Custom "Forest & Earth" design system with topographic-line motif',
+      'Scroll-parallax hero, animated counters, and hover-reveal excursion cards',
+      'Review carousel (Framer Motion)',
+      'EmailJS-powered contact form and newsletter signup',
+    ],
+    screenshots: [
+      { src: tourism1, caption: 'Landing page hero section' },
+      { src: tourism2, caption: 'About section with topographic motif' },
+      { src: tourism3, caption: 'CTA section'},
+      { src: tourism4, caption: 'Review carousel' },
+      { src: tourism5, caption: 'About Page' },
+      { src: tourism6, caption: 'Contact Page' },
+      { src: tourism7, caption: 'Contact form & map' },
+    ],
   },
 ]
 

@@ -11,6 +11,7 @@ import project5 from '../assets/projects/Figma/fdpT.webp'
 import project6 from '../assets/projects/AW Chem/awhome.webp'
 import project7 from '../assets/projects/Ash/ash1.webp'
 import project8 from '../assets/projects/AWCHEM/awchem.webp'
+import project9 from '../assets/projects/BentotaSamantha/bscover.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
@@ -62,7 +63,7 @@ const projects = [
   {
     id: 6,
     number: '06',
-    title: 'Graphify — Campus Project',
+    title: 'Graphify — Figma Project',
     description: '',
     tech: ['Figma', 'UI/UX Design', 'Wireframing', 'Prototyping', 'Mobile App Design'], 
     image: project5     ,
@@ -75,6 +76,15 @@ const projects = [
     description: '',
     tech: ['React', 'Tailwind CSS', 'EmailJS'], 
     image: project7,
+    featured: false,
+  },
+  {
+    id: 8,
+    number: '08',
+    title: 'Bentota Samantha Tours & Travels',
+    description: '',
+    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
+    image: project9,
     featured: false,
   },
 ]
