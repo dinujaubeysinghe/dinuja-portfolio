@@ -9,7 +9,7 @@ const About = () => {
         <img
           src={aboutBg}
           alt="Background"
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-27 lg:opacity-20 pointer-events-none"
         />
 
         <h2

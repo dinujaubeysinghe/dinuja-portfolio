@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -11,6 +11,13 @@ const Footer = () => {
         className='text-white/80 hover:text-white hover:scale-112 transition-transform duration-300'>
           <FaLinkedin size={20} />
         </a>
+        <a href='https://github.com/dinujaubeysinghe' 
+        target='_blank' 
+        rel='noreferrer' 
+        aria-label='GitHub' 
+        className='text-white/80 hover:text-white hover:scale-112 transition-transform duration-300'>
+          <FaGithub size={20} />
+        </a>
         <a href='https://www.instagram.com/_ubey_____/' 
         target='_blank' 
         rel='noreferrer' 
@@ -18,7 +25,7 @@ const Footer = () => {
         className='text-white/80 hover:text-white hover:scale-112 transition-transform duration-300'>
           <FaInstagram size={20} />
         </a>
-        <a href='https://wa.me/94766154657' 
+        <a href='https://wa.me/94711120704' 
         target='_blank' 
         rel='noreferrer' 
         aria-label='WhatsApp' 
@@ -30,8 +37,8 @@ const Footer = () => {
         DINUJA UBEYSINGHE
       </div>
       
-      <div className='mx-24 '>
-        <p className='text-center text-white mt-4 text-sm font-main'>
+      <div className='lg:mx-24 '>
+        <p className='text-center text-white mt-4 text-xs lg:text-sm font-main'>
           &copy; {new Date().getFullYear()} Dinuja Ubeysinghe. All rights reserved.
         </p>
       </div>

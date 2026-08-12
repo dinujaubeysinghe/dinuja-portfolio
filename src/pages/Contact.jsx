@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
@@ -101,11 +101,18 @@ const Contact = () => {
           </p>
 
           <div className="mt-2">
-            <a
-              href="mailto:contact.dinuja@gmail.com"
-              className="block text-sm text-white/80"
-            >
+            <label className="block text-sm text-white/80">
               contact.dinuja@gmail.com
+            </label>
+            <label className="block text-sm text-white/80">
+              dinujaubeysinghe0@gmail.com
+            </label>
+
+            <a
+              href="tel:+94711120704"
+              className="block text-sm text-white/80 mt-6"
+            >
+              +94 71 112 0704 ( WhatsApp Only )
             </a>
 
             <a
@@ -129,6 +136,17 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
+              href="https://github.com/dinujaubeysinghe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white"
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaGithub size={20} />
+            </motion.a>
+
+            <motion.a
               href="https://www.instagram.com/_ubey_____/"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,7 +158,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://wa.me/94766154657"
+              href="https://wa.me/94711120704"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 hover:text-white"
