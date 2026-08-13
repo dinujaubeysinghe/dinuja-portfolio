@@ -1,9 +1,38 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import project1 from '../assets/projects/wageesha_portfolio.webp'
-import project2 from '../assets/projects/unisports.webp'
+import project1 from '../assets/projects/unisportcover.webp'
+import project2 from '../assets/projects/AWCHEM/awchem.webp'
+import project3 from '../assets/projects/wdcover.webp'
+import project4 from '../assets/projects/ashcover.webp'
 
-const ROLES = ['Full Stack Developer','Problem Solver', 'UI/UX Enthusiast',  'React Developer']
+const ROLES = ['Full Stack Developer', 'Problem Solver', 'UI/UX Enthusiast', 'React Developer']
+
+const featuredProjects = [
+  {
+    href: '/projects/1',
+    image: project1,
+    alt: 'UniSport project screenshot',
+    title: 'UniSport - Full Stack Project',
+  },
+  {
+    href: '/projects/2',
+    image: project2,
+    alt: 'AWCHEM project screenshot',
+    title: 'AWCHEM - Full Stack Project',
+  },
+  {
+    href: '/projects/4',
+    image: project3,
+    alt: 'Wageesha Diaz Portfolio project screenshot',
+    title: 'Wageesha Diaz Portfolio ',
+  },
+  {
+    href: '/projects/7',
+    image: project4, 
+    alt: 'Ash Project screenshot',
+    title: 'Ash Design Studio Portfolio',
+  },
+]
 
 const SKILLS = [
   { label: 'React', color: '#61DAFB' },
@@ -38,7 +67,7 @@ export default function Home() {
       } else {
         timeout = setTimeout(() => setTyping(false), 1800)
       }
-      } else {
+    } else {
       if (displayed.length > 0) {
         timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35)
       } else {
@@ -137,13 +166,13 @@ export default function Home() {
             href="/projects"
             className="font-main text-sm font-medium px-7 py-3 rounded-full border border-white/20 text-black bg-white hover:bg-black hover:text-white transition-all duration-300"
           >
-           View Projects
+            View Projects
           </a>
           <a
             href="/contact"
             className="font-main text-sm font-medium px-7 py-3 rounded-full text-white/80 border border-white/20 backdrop-blur transition-all duration-300 hover:border-white/40 hover:text-white hover:bg-white/5"
           >
-             Get in Touch
+            Get in Touch
           </a>
         </div>
 
@@ -207,11 +236,11 @@ export default function Home() {
               </div>
             ))}
           </div>
-          </motion.div>
-            <div className="flex justify-center mt-6">
-            <a href="/about" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
-                About Me
-            </a>
+        </motion.div>
+        <div className="flex justify-center mt-6">
+          <a href="/about" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+            About Me
+          </a>
         </div>
       </section>
 
@@ -236,80 +265,66 @@ export default function Home() {
 
       {/* ── Projects ── */}
       <section className="relative z-10 py-12 px-6 max-w-5xl mx-auto" id="projects">
-        <div className="font-main text-white ">
-            Featured Projects
-        </div>
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
-          <motion.div
-            className="mt-4 text-white/50 rounded-2xl w-full md:w-1/2"
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: 0.18 }}
-          >
-            <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
-                <a href="/projects/1" rel="noopener noreferrer">
-                    <img src={project2} alt="Project 2" className="rounded-2xl h-full w-full object-cover" />
-                </a>
-            </div>
-            <div className="text-white mt-2 text-lg font-main pl-3">
-                UniSport - Full Stack Project
-            </div>
-          </motion.div>
-          <motion.div
-            className="mt-4 text-white rounded-2xl w-full md:w-1/2"
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, delay: 0.08 }}
-          >
-            <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
-                <a href="/projects/3" rel="noopener noreferrer">
-                    <img src={project1} alt="Project 1" className="rounded-2xl h-full w-full object-cover" />
-                </a>
-            </div>
-            <div className="text-white mt-2 text-lg font-main pl-3">
-                Wageesha Diaz Portfolio
-            </div>
-          
-          </motion.div>
-          
-        </div>
-        <div className="flex justify-center mt-6">
-            <a href="/projects" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
-                View All Projects
-            </a>
+        <div className="font-main text-white">
+          Featured Projects
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+          {featuredProjects.map((proj, i) => (
+            <motion.div
+              key={proj.href}
+              className="text-white rounded-2xl"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.08 * i }}
+            >
+              <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
+                <a href={proj.href} rel="noopener noreferrer">
+                  <img src={proj.image} alt={proj.alt} className="rounded-2xl h-full w-full object-cover" />
+                </a>
+              </div>
+              <div className="text-white mt-2 text-lg font-main pl-3">
+                {proj.title}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="flex justify-center mt-6">
+          <a href="/projects" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+            View All Projects
+          </a>
+        </div>
       </section>
       {/* ── Contact ── */}
       <section className="relative z-10 pt-12 pb-16 px-6 max-w-5xl mx-auto" id="contact">
-        <div className="font-main text-white mb-4 flex flex-col items-center"> 
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/50 text-[11px] uppercase tracking-widest font-main mb-6">
-          <span className="w-1.5 h-1.5 rounded-full bg-white" />
-          Get in touch
-        </div>
-        <motion.div className="font-main text-white text-center mb-6"
-          initial={{ opacity: 0, y: 18, scale: 0.98 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.7, delay: 0.06 }}
-        >
-          <h2
-            className="font-main font-extrabold text-white leading-tight mb-4"
-            style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)', letterSpacing: '-0.02em' }}
+        <div className="font-main text-white mb-4 flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/50 text-[11px] uppercase tracking-widest font-main mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-white" />
+            Get in touch
+          </div>
+          <motion.div className="font-main text-white text-center mb-6"
+            initial={{ opacity: 0, y: 18, scale: 0.98 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.06 }}
           >
-            Let's{' '}
-            <em className="not-italic text-white/50">chat</em>
-            <br />
-            Don't Be Shy
-          </h2>
-        </motion.div>
-        <div>
-             <a href="/contact" className="font-main text-sm font-medium mt-6 inline-block px-10 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
-                Contact Me
+            <h2
+              className="font-main font-extrabold text-white leading-tight mb-4"
+              style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)', letterSpacing: '-0.02em' }}
+            >
+              Let's{' '}
+              <em className="not-italic text-white/50">chat</em>
+              <br />
+              Don't Be Shy
+            </h2>
+          </motion.div>
+          <div>
+            <a href="/contact" className="font-main text-sm font-medium mt-6 inline-block px-10 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+              Contact Me
             </a>
-        </div>
+          </div>
         </div>
       </section>
 

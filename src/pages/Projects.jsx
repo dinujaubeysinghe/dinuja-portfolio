@@ -3,13 +3,13 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
 // ─── ADD YOUR PROJECT IMAGES HERE ────────────────────────────────────────────
-import project1 from '../assets/projects/wageesha_portfolio.webp'
-import project2 from '../assets/projects/unisports.webp'
+import project1 from '../assets/projects/wdcover.webp'
+import project2 from '../assets/projects/unisportcover.webp'
 import project3 from '../assets/projects/Smart Campus/sdpT.webp'
 import project4 from '../assets/projects/sportify/spdp2.webp'
 import project5 from '../assets/projects/Figma/fdpT.webp'
 import project6 from '../assets/projects/AW Chem/awhome.webp'
-import project7 from '../assets/projects/Ash/ash1.webp'
+import project7 from '../assets/projects/ashcover.webp'
 import project8 from '../assets/projects/AWCHEM/awchem.webp'
 import project9 from '../assets/projects/BentotaSamantha/bscover.webp'
 // ─────────────────────────────────────────────────────────────────────────────
