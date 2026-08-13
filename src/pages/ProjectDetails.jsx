@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useNavigate, useParams } from 'react-router-dom'
 import projects from '../data/projects'
 import ComingSoonModal from '../components/ComingSoonModal'
+import ScrollToTop from '../components/ScrollToTop'
 
 export default function ProjectDetail() {
   const navigate = useNavigate()
@@ -22,6 +23,7 @@ export default function ProjectDetail() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* ── Header ── */}
       <div className="flex flex-col items-center mt-30 px-4 md:px-6 ">
         <div className="w-full max-w-5xl mx-auto px-4 md:px-10 flex items-center justify-between">

@@ -4,6 +4,7 @@ import project1 from '../assets/projects/unisportcover.webp'
 import project2 from '../assets/projects/AWCHEM/awchem.webp'
 import project3 from '../assets/projects/wdcover.webp'
 import project4 from '../assets/projects/ashcover.webp'
+import GitStats from '../components/Gitstats'
 
 const ROLES = ['Full Stack Developer', 'Problem Solver', 'UI/UX Enthusiast', 'React Developer']
 
@@ -28,7 +29,7 @@ const featuredProjects = [
   },
   {
     href: '/projects/7',
-    image: project4, 
+    image: project4,
     alt: 'Ash Project screenshot',
     title: 'Ash Design Studio Portfolio',
   },
@@ -201,14 +202,14 @@ export default function Home() {
         >
           {/* Text */}
           <div>
-            <p className="font-main text-xs text-primary uppercase tracking-widest mb-4" style={{ color: '#ffffff' }}>
+            <p className="font-main text-sm text-primary uppercase tracking-widest mb-4" style={{ color: '#ffffff' }}>
               About Me
             </p>
             <h2
               className="font-main font-bold text-white mb-6"
               style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', lineHeight: 1.15 }}
             >
-              Building things that live on the internet
+              Developer<span className="text-white font-serif">,</span>designer<span className="text-white font-serif">,</span> and quick learner<span className="text-white font-serif">.</span>
             </h2>
             <p className="font-main text-white/50 text-sm leading-relaxed mb-4">
               I'm a passionate developer who loves turning complex problems into simple,
@@ -265,9 +266,24 @@ export default function Home() {
 
       {/* ── Projects ── */}
       <section className="relative z-10 py-12 px-6 max-w-5xl mx-auto" id="projects">
-        <div className="font-main text-white">
-          Featured Projects
-        </div>
+        <motion.div className="grid md:grid-cols-2 gap-16 items-center"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div >
+            <p className="font-main text-sm text-primary uppercase tracking-widest mb-4" style={{ color: '#ffffff' }}>
+              FEATURED PROJECTS
+            </p>
+            <h2
+              className="font-main font-bold text-white mb-6"
+              style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', lineHeight: 1.15 }}
+            >
+              Building things that live on the internet
+            </h2>
+          </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
           {featuredProjects.map((proj, i) => (
@@ -297,6 +313,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <GitStats username="dinujaubeysinghe" />
+
       {/* ── Contact ── */}
       <section className="relative z-10 pt-12 pb-16 px-6 max-w-5xl mx-auto" id="contact">
         <div className="font-main text-white mb-4 flex flex-col items-center">
@@ -320,10 +339,18 @@ export default function Home() {
               Don't Be Shy
             </h2>
           </motion.div>
-          <div>
-            <a href="/contact" className="font-main text-sm font-medium mt-6 inline-block px-10 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
+          <div className="font-main text-white/50 text-center max-w-lg">
+            <p>Got a project, an internship opening, or just want to say hi? My inbox is always open.</p>
+            <div className="flex flex-col justify-center lg:flex-row lg:gap-2">
+            <a 
+            href="/contact" 
+            className="font-main text-sm font-medium mt-6 inline-block px-10 py-3 rounded-full border bg-white border-white/20 text-black hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
               Contact Me
             </a>
+            <label className="font-main text-sm font-medium mt-6 inline-block px-10 py-3 rounded-full border border-white/20 text-white">
+              contact.dinuja@gmail.com
+            </label>
+            </div>
           </div>
         </div>
       </section>
