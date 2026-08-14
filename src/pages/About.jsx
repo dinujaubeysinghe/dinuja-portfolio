@@ -1,11 +1,12 @@
 import aboutBg from '../assets/about2.webp'
 import aboutBg2 from '../assets/about3.webp'
 import { motion } from 'framer-motion'
+import ScrollToTop from '../components/ScrollToTop'
 
 const About = () => {
   return (
     <div>
-
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col items-center justify-end mt-20 md:mt-36 px-4 md:px-6">
         <img
           src={`${window.innerWidth >= 1024 ? aboutBg2 : aboutBg}`}

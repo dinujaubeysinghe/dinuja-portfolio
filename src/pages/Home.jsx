@@ -5,6 +5,7 @@ import project2 from '../assets/projects/AWCHEM/awchem.webp'
 import project3 from '../assets/projects/wdcover.webp'
 import project4 from '../assets/projects/ashcover.webp'
 import GitStats from '../components/Gitstats'
+import ScrollToTop from '../components/ScrollToTop'
 
 const ROLES = ['Full Stack Developer', 'Problem Solver', 'UI/UX Enthusiast', 'React Developer']
 
@@ -84,7 +85,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#000200]">
-
+      <ScrollToTop />
       {/* Ambient overlays removed to keep background solid #000200 */}
       <div />
 

@@ -1,9 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import ScrollToTop from '../components/ScrollToTop'
 
 const Education = () => {
   return (
     <div>
+        <ScrollToTop />
         <div className="flex flex-col items-center mt-36 px-4 md:px-6">
              <motion.h2
                  className="text-5xl md:text-7xl font-bold text-center"

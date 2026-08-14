@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
+import ScrollToTop from '../components/ScrollToTop'
 
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
@@ -67,6 +68,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center mt-36 px-4 md:px-6">
+      <ScrollToTop />
       <h2
         className="text-3xl md:text-7xl font-bold mb-8 md:mb-16 text-center"
         style={{
