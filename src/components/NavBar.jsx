@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation, NavLink } from 'react-router-dom'
 
 const LINKS = [
   { href: '/', label: 'Home' },
@@ -10,6 +11,9 @@ const LINKS = [
 
 export default function NavBar() {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => setOpen(false), [location])
 
   return (
     <header className="fixed inset-x-0 top-4 z-50">
@@ -23,7 +27,18 @@ export default function NavBar() {
           <nav className="hidden sm:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <div className="flex items-center space-x-6 rounded-full border border-white/20 bg-white/6 px-6 py-3 text-xs text-white backdrop-blur-xl shadow-lg shadow-black/20">
               {LINKS.map((l) => (
-                <a key={l.href} href={l.href} className="hover:text-white/50 transition-colors">{l.label.toUpperCase()}</a>
+                <NavLink
+                  key={l.href}
+                  to={l.href}
+                  end={l.href === '/'}
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'text-white font-semibold transition-colors'
+                      : 'text-white/50 hover:text-white transition-colors'
+                  }
+                >
+                  {l.label.toUpperCase()}
+                </NavLink>
               ))}
             </div>
           </nav>
@@ -55,9 +70,18 @@ export default function NavBar() {
               <ul className="flex flex-col gap-3">
                 {LINKS.map((l) => (
                   <li key={l.href}>
-                    <a href={l.href} onClick={() => setOpen(false)} className="block px-3 py-2 text-white hover:text-white/50 rounded-md transition-colors">
+                    <NavLink
+                      to={l.href}
+                      end={l.href === '/'}
+                      onClick={() => setOpen(false)}
+                      className={({ isActive }) =>
+                        `block px-3 py-2 rounded-md transition-colors ${
+                          isActive ? 'text-white font-semibold' : 'text-white/60 hover:text-white'
+                        }`
+                      }
+                    >
                       {l.label}
-                    </a>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 
 /**
@@ -17,6 +17,7 @@ const GitStats = ({ username = GITHUB_USERNAME_DEFAULT }) => {
     const [totalContributions, setTotalContributions] = useState(0)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
+    const scrollRef = useRef(null)
 
     useEffect(() => {
         let cancelled = false
@@ -48,6 +49,13 @@ const GitStats = ({ username = GITHUB_USERNAME_DEFAULT }) => {
         fetchData()
         return () => { cancelled = true }
     }, [username])
+
+    // once data has loaded and the grid has rendered, jump the scroll
+    // container to the right edge so the most recent weeks are visible first
+    useEffect(() => {
+        if (loading || !scrollRef.current) return
+        scrollRef.current.scrollLeft = scrollRef.current.scrollWidth
+    }, [loading])
 
     // group the flat contributions array into weeks (columns), 7 days each
     const weeks = []
@@ -102,7 +110,7 @@ const GitStats = ({ username = GITHUB_USERNAME_DEFAULT }) => {
                         className="font-main font-bold text-white mb-6"
                         style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', lineHeight: 1.15 }}
                     >
-                        Commits<span className="text-white font-serif">,</span> streaks<span className="text-white font-serif">,</span> and activities
+                        Commits<span className="text-white font-serif">,</span> streaks and activities<span className="text-white font-serif">.</span>
                     </h2>
                 </div>
             </motion.div>
@@ -194,7 +202,7 @@ const GitStats = ({ username = GITHUB_USERNAME_DEFAULT }) => {
                             <div className="h-32 bg-white/5 rounded-xl animate-pulse" />
                         ) : (
                             // only this inner area scrolls horizontally
-                            <div className="overflow-x-auto pb-1">
+                            <div ref={scrollRef} className="overflow-x-auto pb-1">
                                 <div className="flex min-w-[600px]">
                                     {/* day-of-week labels, pinned to the left while weeks scroll */}
                                     <div className="sticky left-0 z-10 flex flex-col justify-between gap-[3px] pr-2 bg-[#0a0612] text-[10px] text-white/30 font-main h-[87px]">

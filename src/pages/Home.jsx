@@ -185,7 +185,7 @@ export default function Home() {
             transition: 'opacity 1s ease 1s',
           }}
         >
-          <span className="font-main text-xs text-white/40 tracking-widest uppercase">Scroll</span>
+          <span className="font-main text-xs text-white/80 tracking-widest uppercase">Scroll</span>
           <div
             className="w-px h-4 bg-linear-to-b from-white/30 to-transparent"
             style={{ animation: 'scrollPulse 2s ease-in-out infinite' }}
@@ -193,7 +193,7 @@ export default function Home() {
         </div>
       </section>
       {/* ── About ── */}
-      <section className="relative z-10 pb-12 pt-8 px-6 max-w-5xl mx-auto" id="about">
+      <section className="relative z-10 pb-12 pt-4 lg:pt-8 px-6 max-w-5xl mx-auto" id="about">
         <motion.div className="grid md:grid-cols-2 gap-16 items-center"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -209,7 +209,7 @@ export default function Home() {
               className="font-main font-bold text-white mb-6"
               style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', lineHeight: 1.15 }}
             >
-              Developer<span className="text-white font-serif">,</span>designer<span className="text-white font-serif">,</span> and quick learner<span className="text-white font-serif">.</span>
+              Developer<span className="text-white font-serif">,</span> designer and quick learner<span className="text-white font-serif">.</span>
             </h2>
             <p className="font-main text-white/50 text-sm leading-relaxed mb-4">
               I'm a passionate developer who loves turning complex problems into simple,
@@ -240,7 +240,7 @@ export default function Home() {
         </motion.div>
         <div className="flex justify-center mt-6">
           <a href="/about" className="font-main text-sm font-medium mt-6 inline-block px-5 py-3 rounded-full border border-white/20 text-white hover:border-white/40 hover:text-white hover:bg-white/5 transition-all duration-300">
-            About Me
+           More About Me
           </a>
         </div>
       </section>
@@ -280,7 +280,7 @@ export default function Home() {
               className="font-main font-bold text-white mb-6"
               style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', lineHeight: 1.15 }}
             >
-              Building things that live on the internet
+              Building things that live on the internet<span className="text-white font-serif">.</span>
             </h2>
           </div>
         </motion.div>
@@ -313,7 +313,8 @@ export default function Home() {
           </a>
         </div>
       </section>
-
+      
+      {/* GitHub Stats */}
       <GitStats username="dinujaubeysinghe" />
 
       {/* ── Contact ── */}
@@ -336,7 +337,7 @@ export default function Home() {
               Let's{' '}
               <em className="not-italic text-white/50">chat</em>
               <br />
-              Don't Be Shy
+              Don't Be Shy<span className="text-white font-serif">.</span>
             </h2>
           </motion.div>
           <div className="font-main text-white/50 text-center max-w-lg">

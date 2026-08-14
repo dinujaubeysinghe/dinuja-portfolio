@@ -1,4 +1,5 @@
-import aboutBg from '../assets/dinuja_abouts2.webp'
+import aboutBg from '../assets/about2.webp'
+import aboutBg2 from '../assets/about3.webp'
 import { motion } from 'framer-motion'
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
 
       <div className="min-h-screen flex flex-col items-center justify-end mt-20 md:mt-36 px-4 md:px-6">
         <img
-          src={aboutBg}
+          src={`${window.innerWidth >= 1024 ? aboutBg2 : aboutBg}`}
           alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover opacity-27 lg:opacity-20 pointer-events-none"
         />
@@ -43,7 +44,7 @@ const About = () => {
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">
-           My interests span across the entire development lifecycle, from designing intuitive and responsive user interfaces to developing robust server-side applications and managing databases. I have experience working with technologies such as React, JavaScript, Tailwind CSS, Node.js, and MongoDB to create modern web solutions.
+            My interests span across the entire development lifecycle, from designing intuitive and responsive user interfaces to developing robust server-side applications and managing databases. I have experience working with technologies such as React, JavaScript, Tailwind CSS, Node.js, and MongoDB to create modern web solutions.
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">
@@ -52,16 +53,24 @@ const About = () => {
 
           <div className="text-white/70 font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-sm flex items-center gap-3">
             <span
-              className="inline-block line-grow"
-              style={{ animationDelay: '620ms' }}
-            ></span>
-
-            <span
               className="italic animate-fadeUp"
               style={{ animationDelay: '700ms' }}
             >
-              Dinuja Ubeysinghe
+                Dinuja Ubeysinghe
             </span>
+            <span
+              className="inline-block line-grow"
+              style={{ animationDelay: '620ms' }}
+            ></span>
+          </div>
+          <div className="px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 pt-8">
+            <a
+              href="/resume/dinuja ubeysinghe resume.pdf"
+              download="dinuja ubeysinghe resume.pdf"
+              className='font-main text-sm font-medium px-7 py-3 rounded-full border border-white/20 text-black bg-white hover:bg-black hover:text-white transition-all duration-300'
+            >
+              Download Resume
+            </a>
           </div>
         </motion.div>
       </section>

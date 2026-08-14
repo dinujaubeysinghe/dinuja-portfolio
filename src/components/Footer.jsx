@@ -33,7 +33,7 @@ const Footer = () => {
           <FaWhatsapp size={20} />
         </a>
       </div>
-      <div className='text-center text-white font-main text-3xl md:text-[124px]'>
+      <div className='text-center font-bold text-white font-main text-3xl md:text-[124px]'>
         DINUJA UBEYSINGHE
       </div>
       
