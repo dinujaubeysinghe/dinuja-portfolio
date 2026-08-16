@@ -77,7 +77,7 @@ const Contact = () => {
           transition: 'opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s',
         }}
       >
-        Let's Talk
+        Let<span className="text-white">’</span>s Talk
       </h2>
 
       <motion.div

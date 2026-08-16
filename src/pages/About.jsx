@@ -11,7 +11,7 @@ const About = () => {
         <img
           src={`${window.innerWidth >= 1024 ? aboutBg2 : aboutBg}`}
           alt="Background"
-          className="absolute top-0 left-0 w-full h-full object-cover opacity-27 lg:opacity-20 pointer-events-none"
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-30 lg:opacity-25 pointer-events-none"
         />
 
         <h2
@@ -45,7 +45,7 @@ const About = () => {
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">
-            My interests span across the entire development lifecycle, from designing intuitive and responsive user interfaces to developing robust server-side applications and managing databases. I have experience working with technologies such as React, JavaScript, Tailwind CSS, Node.js, and MongoDB to create modern web solutions.
+            My interests span across the entire development lifecycle, from designing intuitive and responsive user interfaces to developing robust server-side applications and managing databases. I have experience working with technologies such as React, JavaScript, Tailwind CSS, Node.js, Laravel, MySQL and MongoDB to create modern web solutions.
           </div>
 
           <div className="text-white font-main px-4 sm:px-8 md:px-20 lg:px-40 xl:px-88 mt-4 text-md md:text-md leading-relaxed">

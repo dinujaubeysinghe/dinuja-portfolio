@@ -335,10 +335,10 @@ export default function Home() {
               className="font-main font-extrabold text-white leading-tight mb-4"
               style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)', letterSpacing: '-0.02em' }}
             >
-              Let's{' '}
-              <em className="not-italic text-white/50">chat</em>
+              Let<span className="text-white">’</span>s{' '}
+              <em className="not-italic text-white/50">Chat</em>
               <br />
-              Don't Be Shy<span className="text-white font-serif">.</span>
+              Don<span className="text-white">’</span>t Hesitate<span className="text-white font-serif">.</span>
             </h2>
           </motion.div>
           <div className="font-main text-white/50 text-center max-w-lg">
