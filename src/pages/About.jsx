@@ -18,7 +18,7 @@ const About = () => {
           className="text-4xl sm:text-5xl md:text-7xl font-main font-bold mb-8 md:mb-16 pb-16 md:pb-30 text-center animate-fadeUp"
           style={{ animationDelay: '150ms' }}
         >
-          About Me
+          About <span className="text-white/50">Me</span>
         </h2>
       </div>
 

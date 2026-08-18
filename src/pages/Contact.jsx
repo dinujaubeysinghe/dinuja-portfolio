@@ -70,14 +70,14 @@ const Contact = () => {
     <div className="min-h-screen flex flex-col items-center mt-36 px-4 md:px-6">
       <ScrollToTop />
       <h2
-        className="text-3xl md:text-7xl font-bold mb-8 md:mb-16 text-center"
+        className="text-5xl md:text-7xl font-bold text-center mb-8 md:mb-16"
         style={{
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0)' : 'translateY(30px)',
           transition: 'opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s',
         }}
       >
-        Let<span className="text-white">’</span>s Talk
+        Let<span className="text-white">’</span>s <span className="text-white/50">Talk</span>
       </h2>
 
       <motion.div
