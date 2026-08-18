@@ -241,7 +241,7 @@ export default function Home() {
             >
               Developer<span className="text-white font-serif">,</span> designer and quick learner<span className="text-white font-serif">.</span>
             </h2>
-            <p className="font-main text-white/50 text-sm leading-relaxed mb-4">
+            <p className="font-main text-white/50 leading-relaxed mb-4">
               I'm a third year BSc (Hons) Information Technology undergraduate at SLIIT,
               Sri Lanka. I love turning complexproblems into simple, beautiful, and
               intuitive solutions. My focus is on creating seamless user experiences
@@ -315,7 +315,7 @@ export default function Home() {
             >
               Still learning<span className="text-white font-serif">,</span> always building<span className="text-white font-serif">.</span>
             </h2>
-            <p className="font-main text-white/50 text-sm leading-relaxed">
+            <p className="font-main text-white/50 leading-relaxed">
               Currently pursuing my degree while applying what I learn through
               real projects and freelance work.
 
