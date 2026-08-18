@@ -241,7 +241,7 @@ export default function Home() {
             >
               Developer<span className="text-white font-serif">,</span> designer and quick learner<span className="text-white font-serif">.</span>
             </h2>
-            <p className="font-main text-white/50 leading-relaxed mb-4">
+            <p className="font-main text-white/50 text-sm leading-relaxed mb-4">
               I'm a third year BSc (Hons) Information Technology undergraduate at SLIIT,
               Sri Lanka. I love turning complexproblems into simple, beautiful, and
               intuitive solutions. My focus is on creating seamless user experiences
@@ -315,7 +315,7 @@ export default function Home() {
             >
               Still learning<span className="text-white font-serif">,</span> always building<span className="text-white font-serif">.</span>
             </h2>
-            <p className="font-main text-white/50 leading-relaxed">
+            <p className="font-main text-white/50 text-sm leading-relaxed">
               Currently pursuing my degree while applying what I learn through
               real projects and freelance work.
 
@@ -461,7 +461,7 @@ export default function Home() {
               Don<span className="text-white">’</span>t Hesitate<span className="text-white font-serif">.</span>
             </h2>
           </motion.div>
-          <div className="font-main text-white/50 text-center max-w-lg">
+          <div className="font-main text-white/50 text-sm text-center max-w-lg">
             <p>Got a project, an internship opening, or just want to say hi? My inbox is always open.</p>
             <div className="flex flex-col justify-center lg:flex-row lg:gap-2">
               <a
