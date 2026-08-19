@@ -243,7 +243,7 @@ export default function Home() {
             </h2>
             <p className="font-main text-white/50 text-sm leading-relaxed mb-4">
               I'm a third year BSc (Hons) Information Technology undergraduate at SLIIT,
-              Sri Lanka. I love turning complexproblems into simple, beautiful, and
+              Sri Lanka. I love turning complex problems into simple, beautiful, and
               intuitive solutions. My focus is on creating seamless user experiences
               while writing clean and maintainable code.
             </p>
@@ -348,7 +348,7 @@ export default function Home() {
           {certifications.map((cert, i) => (
             <motion.div
               key={cert.href}
-              className="text-white rounded-2xl"
+              className="text-white rounded-2xl group"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -356,7 +356,7 @@ export default function Home() {
             >
               <div className="rounded-2xl w-full overflow-hidden">
                 <a href={cert.href} rel="noopener noreferrer" target="_blank">
-                  <img src={cert.image} alt={cert.alt} className="rounded-2xl h-auto w-full object-contain" />
+                  <img src={cert.image} alt={cert.alt} className="rounded-2xl h-auto w-full object-contain group-hover:scale-105 transition-transform duration-500" />
                 </a>
               </div>
               <div className="text-white mt-4 text-lg font-main pl-3">
@@ -403,7 +403,7 @@ export default function Home() {
           {featuredProjects.map((proj, i) => (
             <motion.div
               key={proj.href}
-              className="text-white rounded-2xl"
+              className="text-white rounded-2xl group"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -411,7 +411,7 @@ export default function Home() {
             >
               <div className="rounded-2xl h-56 md:h-72 w-full overflow-hidden">
                 <a href={proj.href} rel="noopener noreferrer">
-                  <img src={proj.image} alt={proj.alt} className="rounded-2xl h-full w-full object-cover" />
+                  <img src={proj.image} alt={proj.alt} className="rounded-2xl h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </a>
               </div>
               <div className="text-white mt-2 text-lg font-main pl-3">
