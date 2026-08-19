@@ -153,7 +153,7 @@ const Education = () => {
                                 >
                                     <div className="rounded-2xl w-full overflow-hidden">
                                         <a href={cert.href} rel="noopener noreferrer" target="_blank">
-                                            <img src={cert.image} alt={cert.alt} className="rounded-2xl h-auto w-full object-contain" />
+                                            <img src={cert.image} alt={cert.alt} className="rounded-2xl h-auto w-full object-contain hover:scale-105 transition-transform duration-500" />
                                         </a>
                                     </div>
                                     <div className="text-white mt-4 text-lg font-main pl-3">

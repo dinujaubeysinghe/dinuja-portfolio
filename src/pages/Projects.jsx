@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import ScrollToTop from '../components/ScrollToTop'
 
 // ─── ADD YOUR PROJECT IMAGES HERE ────────────────────────────────────────────
 import project1 from '../assets/projects/wdcover.webp'
@@ -94,7 +95,7 @@ const Projects = () => {
 
   return (
     <div>
-
+      <ScrollToTop />
       {/* ── Heading ── */}
       <div className="flex flex-col items-center mt-36 px-4 md:px-6">
         <motion.h2
