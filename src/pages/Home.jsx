@@ -181,7 +181,7 @@ export default function Home() {
             transition: 'opacity 0.7s ease 0.35s, transform 0.7s ease 0.35s',
           }}
         >
-          I am an IT undergraduate student passionate about code and thoughtful design. Based in DownSouth, Sri Lanka.
+          IT undergraduate turned full-stack developer — I design and build web products end to end. Based in Bentota, Sri Lanka.
         </p>
 
         {/* CTA buttons */}
