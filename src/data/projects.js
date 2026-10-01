@@ -91,6 +91,12 @@ import tourism5 from '../assets/projects/BentotaSamantha/bs5.webp'
 import tourism6 from '../assets/projects/BentotaSamantha/bs6.webp'
 import tourism7 from '../assets/projects/BentotaSamantha/bs7.webp'
 
+// ── Japolic images ──
+import jp1 from '../assets/projects/Japolic/jp1.webp'
+import jp2 from '../assets/projects/Japolic/jp2.webp'
+import jp3 from '../assets/projects/Japolic/jp3.webp'
+import jp4 from '../assets/projects/Japolic/jp4.webp'
+
 const projects = [
   {
     id: 1,
@@ -393,6 +399,38 @@ Outcome: Delivered a polished, animation rich frontend with a consistent design 
       { src: tourism5, caption: 'About Page' },
       { src: tourism6, caption: 'Contact Page' },
       { src: tourism7, caption: 'Contact form & map' },
+    ],
+  },
+  {
+    id: 9,
+    number: '09',
+    title: 'Japolic',
+    tagline: 'Brand and product UI case study for a developer infrastructure platform',
+    description: `A UI/UX case study designed for Japolic, a developer infrastructure company building a high-performance shared file system for AI and data-intensive workloads. The brief called for a visual identity grounded in "early computing and engineering" character — classic, warm, and technical, while avoiding the generic dark-mode SaaS aesthetic common to developer tools.
+
+I began by establishing a brand direction: a bold slab-serif wordmark, a warm palette of rust orange, cream, near-black, and a muted forest green, and a moodboard drawing from vintage technical manuals and industrial signage rather than typical startup branding.
+
+For the product UI, I designed a Storage Overview dashboard — the primary screen — surfacing the product's core value proposition: throughput, latency, and the hot-versus-cold tiering of data between local storage and S3. Rather than a generic file browser, each dataset carries a visible state (Hot or S3) so a developer can understand at a glance what's fast and local versus tiered to cheaper cold storage.
+
+As the supporting interaction, I designed a three-step Connect a Server flow — naming and tagging a server's environment, running a generated CLI command to authenticate it, and a success state confirming the new server's live throughput. The CLI step was a deliberate choice to speak to developers as the primary audience, rather than defaulting to a generic form-based setup flow.
+
+Outcome: A cohesive brand and product UI concept that translates an infrastructure product's technical differentiators — tiered storage, throughput, developer-first setup — into a clear, warm, and considered interface.`,
+    status: 'Completed',
+    year: '2026',
+    github: 'https://github.com/dinujaubeysinghe/figma-japolic',
+    live: 'https://www.figma.com/design/E6MNOO6zKdATH3N6PJQueQ/Japolic?node-id=45-230&t=Zh3OgMXnNNP5vFyN-1',
+    tech: ['Figma', 'UI/UX Design', 'Brand Identity', 'Wireframing', 'Prototyping'],
+    features: [
+      'Brand direction — wordmark, color palette, and moodboard for a warm, technical identity',
+      'Storage Overview dashboard with throughput, latency, and hot/cold data tiering',
+      'Three-step Connect a Server flow with CLI-based authentication',
+      'Consistent visual system applied across dashboard, modal, and success states',
+    ],
+    screenshots: [
+      { src: jp1, caption: 'Storage overview dashboard' },
+      { src: jp2, caption: 'Connect a server — step 1' },
+      { src: jp3, caption: 'Connect a server — step 2' },
+      { src: jp4, caption: 'Connect a server — step 3' },
     ],
   },
 ]

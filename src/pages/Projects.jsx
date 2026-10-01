@@ -13,6 +13,7 @@ import project6 from '../assets/projects/AW Chem/awhome.webp'
 import project7 from '../assets/projects/ashcover.webp'
 import project8 from '../assets/projects/AWCHEM/awchem.webp'
 import project9 from '../assets/projects/BentotaSamantha/bscover.webp'
+import project10 from '../assets/projects/Japolic/jpcover.webp'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const projects = [
@@ -86,6 +87,15 @@ const projects = [
     description: '',
     tech: ['React', 'Tailwind CSS', 'Framer Motion', 'EmailJS'],
     image: project9,
+    featured: false,
+  },
+  {
+    id: 9,
+    number: '09',
+    title: 'Japolic — UI/UX Case Study',
+    description: 'A brand and product UI case study for a developer infrastructure platform, covering visual identity, a storage dashboard, and a developer-first connect flow.',
+    tech: ['Figma', 'UI/UX Design', 'Brand Identity', 'Wireframing', 'Prototyping'],
+    image: project10,
     featured: false,
   },
 ]
