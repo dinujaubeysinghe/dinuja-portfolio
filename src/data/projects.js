@@ -140,7 +140,7 @@ Outcome: Delivered a secure, scalable, and maintainable sports management platfo
   {
     id: 2,
     number: '02',
-    title: 'AWCHEM',
+title: 'AWCHEMISTRY',
     tagline: 'A/L chemistry tutoring platform for learning science stream students',
     description: `A comprehensive chemistry tutoring platform built for an A/L (Advanced Level) chemistry teacher to manage classes, quizzes, and student progress, with full Sinhala-language content support. The system enables administrators to manage students, classes, and quizzes, while students track their enrollments, results, and weekly class progress through a dedicated dashboard.
 
@@ -151,10 +151,10 @@ On the admin side, I built CRUD systems for managing students, classes, quizzes,
 For students, I built an enrollment flow with confirmation safeguards, a results tracking system with unique constraints, and a weekly class progress feature where admins post lecture updates with PDF and video links, which students view through a read-only expandable timeline.
 
 Outcome: Delivered a secure, Sinhala-language chemistry tutoring platform that streamlined class scheduling, quiz assignment, and student progress tracking for both the teacher administrator and enrolled students.`,
-    status: 'In Progress',
+    status: 'Completed',
     year: '2026',
     github: 'https://github.com/dinujaubeysinghe/AWCHEM',
-    live: '',
+    live: 'https://awchemistry.online/',
     tech: ['Laravel 13', 'React', 'Vite', 'Tailwind CSS v4', 'MySQL', 'REST API', 'Axios', 'PHP', 'JavaScript', 'Git'],
     features: [
       'Role-based dashboards and layouts for Admin and Student users',
@@ -179,7 +179,7 @@ Outcome: Delivered a secure, Sinhala-language chemistry tutoring platform that s
   {
     id: 3,
     number: '03',
-    title: 'AW CHEM',
+    title: 'AWCHEMISTRY',
     tagline: 'A/L chemistry tutoring platform for classes, quizzes, and student progress',
     description: `AW Chemistry LMS is a tution class focused Learning Management System designed to provide students and administrators with a smooth and organized digital learning experience. The application was designed using Figma with a strong focus on creating a clean, modern, and user friendly educational interface that simplifies online learning and academic management.
 
